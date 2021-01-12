@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Layered Service Provider | Network Programming for Microsoft Windows (Microsoft Professional Series)</title>
+  <meta name="description" content="Network Programming for Microsoft Windows (Microsoft Professional Series),2001,  (isbn 0735605602, ean 0735605602), by Jones A., Ohlund J. ">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="yandex-verification" content="71b55d2198e4145b">
+  <style>.h90{height:90px;}.adl{width:336px;height:280px;float:left;margin:0px 10px 10px 0px;}.seven.columns{width:56.66%}pre{display: block;white-space: pre-wrap;}.mnw{min-height:75px;width:auto!important;}.mgt10{margin-top:10px;}.amt img{max-width:110px;}.u-pull-right{float:right;}.small_text,.small_text a:link,.small_text a:visited{font-size:12px!important;color:#fff;}.one-half.column{width:48%;}.mod{padding:0px 10px!important;line-height:2.5em;margin:0px!important;height:30px;}.bgn{background:#576475;}.column,.columns,.container,.u-full-width{width:100%;box-sizing:border-box}h1,h2{letter-spacing:-.1rem}.column,.columns,.container,.u-full-width,.u-max-full-width{box-sizing:border-box}img{border:0}.container{position:relative;max-width:960px;margin:0 auto;padding:0 20px}body,html{padding:0;margin:0}.column,.columns{float:left}html{font-size:62.5%}body{font-size:1.5em;line-height:1.6;font-weight:400;font-family:Arial;color:#222}h1,h2,h3,.h3,h4,h5,h6{margin-top:0;margin-bottom:2rem;font-weight:300}.u-max-full-width{max-width:100%}.test h1{margin:0.67em 0;}.caretback{font-size:20px!important;padding-top:0;text-decoration:none}.caretback span{margin-top:-2px}.waka{margin-top:20px}h1{font-size:4rem;line-height:1.2}h2{font-size:3.6rem;line-height:1.25}p{margin-top:0}a{color:#1EAEDB}a:hover{color:#0FA0CE}.container:after,.row:after,.u-cf{content:"";display:table;clear:both}.book_details{border:1px dotted #ccc;padding:15px;margin-bottom:25px;background:#f5f5f5;border-radius:4px}.book_details img{max-height:75px}.smdet{font-size:.9em}.small_h1{font-size:1.2em!important;font-weight:700;margin:.67em 0}ul{list-style:circle inside}ol{list-style:decimal inside}ol,ul{padding-left:0;margin-top:0}ol ol,ol ul,ul ol,ul ul{margin:1.5rem 0 1.5rem 3rem;font-size:90%}.mainb{clear:both;display:block;border-bottom:1px dotted #ccc;padding-bottom:10px!important;padding-top:10px!important}.mainb img{float:left;padding-right:5px;max-height:70px}.mainb span{font-size:12px}.bgdt{background:#EEE;text-align:center;border-radius:4px;font-size:1rem;text-transform:uppercase;height:30px;line-height:30px;margin-bottom:.75rem;font-weight:600;letter-spacing:.1rem}.bgdt.bd{text-align:left;display:block;height:auto;line-height:1.3em;padding:5px 5px;}.subcats,.subcats li{list-style:none;margin:0;padding:0;font-size:1em}.subcats li a,.subcats li a:link,.subcats li a:visited{color:#666;font-size:1.2rem;margin-bottom:.75rem;font-weight:600;letter-spacing:.1rem}.subbut{padding-left:10px;padding-right:10px;margin-right:5px;margin-top:5px}.logo a,.logo a:link,.logo a:visited{color:#fff;text-decoration:none;padding:20px 0;font-size:24px}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.button,button{margin-bottom:1rem}.button,button,input[type=submit],input[type=reset],input[type=button]{display:inline-block;height:38px;padding:0 30px;color:#555;text-align:center;font-size:11px;font-weight:600;line-height:38px;letter-spacing:.1rem;text-transform:uppercase;text-decoration:none;white-space:nowrap;background-color:transparent;border-radius:4px;border:1px solid #bbb;cursor:pointer;box-sizing:border-box}@media (min-width:750px){.navbar+.docs-section{border-top-width:0}.navbar,.navbar-spacer{display:block;width:100%;height:6.5rem;background:#fff;z-index:99;border-top:1px solid #eee;border-bottom:1px solid #eee}.navbar-spacer{display:none}.navbar>.container{width:100%}.navbar-list{list-style:none;margin-bottom:0}.navbar-item{position:relative;float:left;margin-bottom:0}.navbar-link{text-transform:uppercase;font-size:11px;font-weight:600;letter-spacing:.2rem;margin-right:35px;text-decoration:none;line-height:6.5rem;color:#222}.navbar-link.active{color:#33C3F0}}@media (min-width:400px){.container{width:85%;padding:0}a.mod{width:100%;margin-bottom:1px!important}}@media (min-width:550px){.container{width:80%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.ten.columns{width:82.6666666667%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.twelve.columns{width:100%;margin-left:0}.one-third.column{width:30.6666666667%}.offset-by-one-third.column,.offset-by-one-third.columns{margin-left:34.6666666667%}h1{font-size:3rem}h2{font-size:2.2rem}}hr{margin-top:3rem;margin-bottom:3.5rem;border-width:0;border-top:1px solid #E1E1E1;}.small_text{padding:10px;}.amt span{padding:5px 0px;display:block;}.amt a:link,.amt a:visited{font-size:13px;line-height:1.1em;color:#666!important;text-decoration:none;}.amt a:hover{text-decoration:underline;}@media(max-width:335px){.adx{display:none;}.mod{width:100%;}}@media(max-width:400px){.mod{width:100%;}}.node{float:right;position:absolute;top:0px;}.node:link,.node:visited{padding-top:7px;color:#fff;text-decoration:none;}</style>
+  
+  <link rel="icon" type="image/png" href="https://flylib.com/tpl/fly/images/favicon.png">
+  <script type="text/javascript" async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/analytics.js"></script><script async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/async-ads.js"></script><script type="text/javascript" async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/cse.js"></script><script data-ad-client="ca-pub-0797006098659510" async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/adsbygoogle.js"></script>
+
+<script src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/cse_element__en.js" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/default_v2en.css"><link type="text/css" rel="stylesheet" href="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/default.css"><style type="text/css">.gsc-control-cse{font-family:trebuchet ms, arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:trebuchet ms, arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#3D85C6}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#666666;background-color:#CECECE;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#CCCCCC;border-color:#CCCCCC;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#CCCCCC;border-color:#CCCCCC;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#576475;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#3D85C6}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#0B5394}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#0B5394}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#576475}.gsc-cursor-page{color:#3D85C6}a.gsc-trailing-more-results:link{color:#3D85C6}.gs-webResult .gs-snippet,.gs-fileFormatType{color:#000000}.gs-webResult div.gs-visibleUrl{color:#45818E}.gs-webResult div.gs-visibleUrl-short{color:#45818E}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#CCCCCC}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#CCCCCC}.gsc-webResult.gsc-result.gsc-promotion{border-color:#336699;background-color:#FFFFFF}.gsc-completion-title{color:#3D85C6}.gsc-completion-snippet{color:#000000}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#0000FF}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#663399}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#0000FF}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#0000FF}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#000000}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#008000}.gcsc-find-more-on-google{color:#3D85C6}.gcsc-find-more-on-google-magnifier{fill:#3D85C6}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-moz-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body>
+<div class="row bgn">
+<div class="container">
+  <div class="two columns logo"><a href="javascript:;" data-path="/">Flylib.com</a></div>
+  <div class="seven columns"></div>
+  <div class="three columns"><script>
+  (function() {
+    var cx = 'partner-pub-0797006098659510:7754693395';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<div id="___gcse_0"><div class="gsc-control-searchbox-only gsc-control-searchbox-only-en" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table class="gsc-search-box" cellspacing="0" cellpadding="0"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table style="width: 100%; padding: 0px;" id="gs_id50" class="gstl_50 gsc-input" cellspacing="0" cellpadding="0"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" style="width: 100%; padding: 0px; border: medium none; margin: 0px; height: auto; outline: currentcolor none medium;" id="gsc-i-id1" dir="ltr" spellcheck="false"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;" title="Clear search box" role="button"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form></div></div></div>
+</div></div><br>
+<div class="container">
+  <div class="row">
+    <div class="twelve columns"><div class="ax adsense_top_ad"><script async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/adsbygoogle.js"></script>
+<!-- ax_flylib_top_links -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0797006098659510" data-ad-slot="4530452396" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		
+		<div class="row test">
+		<h1>Layered Service Provider</h1>
+		</div>
+		<div class="u-cf"></div>
+		
+		<div class="row"><div class="one-third column value"><a class="button button-primary mod" href="https://flylib.com/books/en/1.403.1.77/1/">Previous page</a></div><div class="one-third column value" style="text-align:center;"><a class="button button-primary mod" href="javascript:;" data-hash="86b94c22ea41b309a467c20be0fae8fd" data-path="/books/en/1.403.1/">Table of content</a></div><div class="one-third column value"><a class="button button-primary mod u-pull-right" href="https://flylib.com/books/en/1.403.1.79/1/">Next page</a></div></div>
+		
+		<div class="content index ">
+		<div class="u-cf"></div>
+			
+			<div class="waka"><div class="ax adsense_before_1"><script async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/adsbygoogle.js"></script>
+<!-- ax_flylib_before_1 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0797006098659510" data-ad-slot="6197526399" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div><!--?xml version="1.0" encoding="UTF-8"?-->                           <p> </p><p>Layered Service Provider</p> <p>As
+ we mentioned, a layered service provider (LSP) installs itself into the
+ Winsock catalog so that an application that creates a socket will call 
+into it without necessarily having any awareness of the LSP. This is 
+useful for developing system components that modify or monitor any 
+portion of the Winsock API. For example, a secure socket provider that 
+implements SSL can be implemented as a layered service provider. In this
+ example, the LSP would negotiate the SSL connection when the 
+application issues a connect as well as encrypting data sent via any 
+Winsock send command while decrypting data returned from the receive 
+commands. Other possibilities include Winsock proxy clients and content 
+filtering.</p> <p>An LSP accomplishes this by installing an entirely new
+ Winsock provider that mimics or extends an existing provider. For 
+example, if you were developing an LSP that filters HTTP requests, you 
+would need to layer your provider over the Microsoft TCP provider 
+because the HTTP protocol runs over TCP. You would want this new 
+provider to be virtually indistinguishable (at least from an 
+application's perspective) from the base Microsoft provider because you 
+want any application that uses TCP to go through your provider first. Of
+ course, it is possible to create an LSP that implements an entirely 
+different protocol with different semantics on top of an existing 
+Winsock provider.</p> <p>In Chapter 2, you saw how Winsock selects the 
+appropriate provider to load when a socket is created. When an LSP is 
+installed, it is placed in the catalog in a certain order. When an 
+application creates a socket, the catalog is enumerated in order until 
+the best match is found, at which point the system loads that provider. 
+This allows a layered provider to be loaded instead of the default 
+Microsoft provider.</p> <p>When an application that created a socket 
+from the layered provider makes a Winsock call, the system routes the 
+call into the LSP. At that point, the LSP can perform its necessary 
+tasks. It can also pass the request to the provider below itself if 
+further action is required. For example, in our HTTP content filtering 
+examples, we may want to intercept HTTP requests and modify them before 
+actually making the request. This would require the LSP to perform some 
+action for any of the Winsock APIs that send data. When the application 
+calls any Winsock send function, the call is routed to the LSP, which 
+examines the send buffer and makes the appropriate modifications to it. 
+Of course, the LSP doesn't actually know how to send TCP data; it relies
+ on the underlying TCP provider, which has a kernel mode driver that 
+implements the protocol. The LSP must know where it resides in the 
+protocol chain to pass the modified send request to the provider beneath
+ it. In many cases, this will be the base provider but an LSP can be 
+installed over other LSPs. Eventually, the request will make it to a 
+base provider, which will perform the appropriate action. In the next 
+section you'll see exactly how these protocol chains are implemented 
+because when an LSP is installed, these chains must be built. Figure 
+12-2 shows the relationship between applications, layered service 
+providers, and base providers.</p> <p alt="Graphic Image - " title="Click to view full size" align="center"> <img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/a_003.htm"> </p><p><b>Figure 12-2</b> <i>Layered provider architecture</i></p> <p></p> <p>Winsock
+ LSPs are implemented as a standard Windows dynamic-link library into 
+which you must export a single function entry named <span>WSPStartup</span>. When the system invokes the layered provider's <span>WSPStartup</span>,
+ it must expose 30 additional SPI functions that make up the LSP via a 
+function dispatch table passed as a parameter. Table 12-2 lists those 
+SPI functions that must be implemented within the DLL.</p> <table tabstyle="DevStand table w/title" cellspacing="0" cellpadding="0" align="center"> <caption><b>Table 12-2</b> <i>Transport Provider Support Functions </i></caption> <thead> <tr> <td> <p>API Function</p> </td> <td> <p>Maps to SPI Function</p> </td> </tr> </thead> <tbody> <tr> <td> <p><span>WSAAccept</span> (<span>accept</span> also indirectly maps to <span>WSPAccept</span>)</p> </td> <td> <p><span>WSPAccept</span></p> </td> </tr> <tr> <td> <p><span>WSAAddressToString</span></p> </td> <td> <p><span>WSPAddressToString</span></p> </td> </tr> <tr> <td> <p><span>WSAAsyncSelect</span></p> </td> <td> <p><span>WSPAsyncSelect</span></p> </td> </tr> <tr> <td> <p><span>Bind</span></p> </td> <td> <p><span>WSPBind</span></p> </td> </tr> <tr> <td> <p><span>WSACancelBlockingCall</span></p> </td> <td> <p><span>WSPCancelBlockingCall</span></p> </td> </tr> <tr> <td> <p><span>WSACleanup</span></p> </td> <td> <p><span>WSPCleanup</span></p> </td> </tr> <tr> <td> <p><span>closesocket</span></p> </td> <td> <p><span>WSPCloseSocket</span></p> </td> </tr> <tr> <td> <p><span>WSAConnect</span> (<span>connect</span> also indirectly maps to <span>WSPConnect</span>)</p> </td> <td> <p><span>WSPConnect</span></p> </td> </tr> <tr> <td> <p><span>WSADuplicateSocket</span></p> </td> <td> <p><span>WSPDuplicateSocket</span></p> </td> </tr> <tr> <td> <p><span>WSAEnumNetworkEvents</span></p> </td> <td> <p><span>WSPEnumNetworkEvents</span></p> </td> </tr> <tr> <td> <p><span>WSAEventSelect</span></p> </td> <td> <p><span>WSPEventSelect</span></p> </td> </tr> <tr> <td> <p><span>WSAGetOverlappedResult</span></p> </td> <td> <p><span>WSPGetOverlappedResult</span></p> </td> </tr> <tr> <td> <p><span>getpeername</span></p> </td> <td> <p><span>WSPGetPeerName</span></p> </td> </tr> <tr> <td> <p><span>getsockname</span></p> </td> <td> <p><span>WSPGetSockName</span></p> </td> </tr> <tr> <td> <p><span>getsockopt</span></p> </td> <td> <p><span>WSPGetSockOpt</span></p> </td> </tr> <tr> <td> <p><span>WSAGetQOSByName</span></p> </td> <td> <p><span>WSPGetQOSByName</span></p> </td> </tr> <tr> <td> <p><span>WSAIoctl</span></p> </td> <td> <p><span>WSPIoctl</span></p> </td> </tr> <tr> <td> <p><span>WSAJoinLeaf</span></p> </td> <td> <p><span>WSPJoinLeaf</span></p> </td> </tr> <tr> <td> <p><span>Listen</span></p> </td> <td> <p><span>WSPListen</span></p> </td> </tr> <tr> <td> <p><span>WSARecv</span> (<span>recv</span> also indirectly maps to <span>WSPRecv</span>)</p> </td> <td> <p><span>WSPRecv</span></p> </td> </tr> <tr> <td> <p><span>WSARecvDisconnect</span></p> </td> <td> <p><span>WSPRecvDisconnect</span></p> </td> </tr> <tr> <td> <p><span>WSARecvFrom</span> (<span>recvfrom</span> also indirectly maps to <span>WSPRecvFrom</span>)</p> </td> <td> <p><span>WSPRecvFrom</span></p> </td> </tr> <tr> <td> <p><span>Select</span></p> </td> <td> <p><span>WSPSelect</span></p> </td> </tr> <tr> <td> <p><span>WSASend</span> (<span>send</span> also indirectly maps to <span>WSPSend</span>)</p> </td> <td> <p><span>WSPSend</span></p> </td> </tr> <tr> <td> <p><span>WSASendDisconnect</span></p> </td> <td> <p><span>WSPSendDisconnect</span></p> </td> </tr> <tr> <td> <p><span>WSASendTo</span> (<span>sendto</span> also indirectly maps to <span>WSPSendTo</span>)</p> </td> <td> <p><span>WSPSendTo</span></p> </td> </tr> <tr> <td> <p><span>setsockopt</span></p> </td> <td> <p><span>WSPSetSockOpt</span></p> </td> </tr> <tr> <td> <p><span>shutdown</span></p> </td> <td> <p><span>WSPShutdown</span></p> </td> </tr> <tr> <td> <p><span>WSASocket</span> (<span>socket</span> also indirectly maps to <span>WSPSocket</span>)</p> </td> <td> <p><span>WSPSocket</span></p> </td> </tr> <tr> <td> <p><span>WSAStringToAddress</span></p> </td> <td> <p><span>WSPStringToAddress</span></p> </td> </tr> </tbody> </table> <p>In
+ most cases, when an application calls a Winsock function, WS2_32.DLL 
+calls a corresponding Winsock SPI function to carry out the request 
+using a specific service provider. For example, <span>select</span> maps to <span>WSPSelect</span>, <span>WSAConnect</span> maps to <span>WSPConnect</span>, and <span>WSAAccept</span> maps to <span>WSPAccept</span>. However, not all Winsock functions have a corresponding SPI function. The following list details these exceptions.</p> <ul> <li> <p> Support functions such as <span>htonl</span>, <span>htons</span>, <span>ntohl</span>, and <span>ntohs</span>
+ are implemented within WS2_32.DLL and aren't passed down to a service 
+provider. The same holds true for the WSA versions of these functions.</p> </li> <li> <p> IP conversion functions such as <span>inet_addr</span> and <span>inet_ntoa</span> are implemented only within WS2_32.DLL.</p> </li> <li> <p> All of the IP specific name conversion and resolution functions (i.e., the <span>WSAGetXbyY</span> functions) as well as <span>WSACancelAsyncRequest</span> and <span>gethostname</span> are implemented within WS2_32.DLL.</p> </li> <li> <p> Winsock catalog functions and blocking hook-related functions are implemented within WS2_32.DLL. Thus, <span>WSAEnumProtocols</span>, <span>WSA-IsBlocking</span>, <span>WSASetBlockingHook</span>, and <span>WSAUnhookBlockingHook</span> do not have SPI equivalent functions.</p> </li> <li> <p> Winsock error codes are managed within WS2_32.DLL and as such <span>WSAGetLastError</span> and <span>WSASetLastError</span> are not mapped to service providers.</p> </li> <li> <p> The event object manipulation and wait functions—including <span>WSACreateEvent</span>, <span>WSACloseEvent</span>, <span>WSASetEvent</span>, <span>WSAResetEvent</span>, and <span>WSAWaitForMultipleEvents—</span>are mapped directly to native Windows operating system calls and aren't present in the service provider.</p> </li> </ul> <p>Also, a sample LSP is included on the companion CD in the directory <span>Lsp</span>.
+ This LSP is a pass-through LSP. It doesn't modify any of the Winsock 
+API calls, it simply passes the call down to the lower layer. Throughout
+ our discussion of layered providers, we'll refer to the sample code to 
+illustrate various points.</p> <p>Before getting into the details of 
+installing and implementing an LSP, we should discuss error handling. 
+Winsock applications often use <span>WSAGetLastError</span> and sometimes <span>WSASetLastError</span>.
+ However, as we have pointed out, there is no SPI equivalent to these 
+functions. Instead, each of the SPI functions an LSP must implement 
+(listed in Table 12-2) are exact mirrors of their API equivalents in 
+terms of parameters except for an additional parameter, <span>lpErrno</span>. Those APIs that can be called in an overlapped manner have one additional parameter in addition to <span>lpErrno</span>
+ the thread ID for the calling thread (which is discussed in the 
+“Handling I/O” section). This is a pointer to an integer that should be 
+set to the correct error code in case the LSP function fails. To 
+indicate a failure, the LSP function should return <span>SOCKET_ERROR</span> and set <span>lpErrno</span>. For success, <span>NO_ERROR</span> is returned and the <span>lpErrno</span> value is ignored. The only exception is <span>WSPStartup</span>, which either returns <span>NO_ERROR</span> or the actual error code that caused startup to fail.</p> <p> </p><p>Installing an LSP</p> <p>Before
+ we talk about implementing an LSP, the first step is installing the 
+layered provider into the Winsock catalog, which can become very 
+complicated in itself. In Chapter 2, you saw how an application can 
+enumerate the Winsock catalog as well as provide a code sample 
+illustrating that. Installing an LSP consists of installing a <span>WSAPROTOCOL_INFOW</span>
+ structure defining the characteristics of the layered provider as well 
+as how the LSP fits into the “chain.” As the name “layered service 
+provider” implies, providers are layered on top of one another to form a
+ protocol chain that is defined as</p> <p> </p><pre>typedef struct _WSAPROTOCOLCHAIN {     int ChainLen;     DWORD ChainEntries[MAX_PROTOCOL_CHAIN]; } WSAPROTOCOLCHAIN, FAR * LPWSAPROTOCOLCHAIN;</pre> <p></p> <p>The <span>ChainLen</span> field is important because it indicates the type of provider the entry is. Table 12-3 lists the possible values. When <span>ChainLen</span> is zero or 1, the data contained in the <span>ChainEntries</span>
+ array is meaningless. The value of one indicates a base provider, such 
+as the Microsoft TCP and UDP providers. Typically, a base provider has a
+ kernel mode protocol driver associated with it. For example, the 
+Microsoft TCP and UPD providers require the TCP/IP driver TCPIP.SYS to 
+ultimately function. It is also possible to develop your own base 
+providers, but that is beyond the scope of this book. For more 
+information about base providers, consult the Windows Driver Development
+ Kit (DDK).</p> <table tabstyle="DevStand table w/title" cellspacing="0" cellpadding="0" align="center"> <caption><b>Table 12-3</b> <i>Chain Length and Type of Provider</i></caption> <thead> <tr> <td> <p>ChainLen Value</p> </td> <td> <p>Description</p> </td> </tr> </thead> <tbody> <tr> <td> <p>0</p> </td> <td> <p>Layered provider entry</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>Base provider</p> </td> </tr> <tr> <td> <p>2 or more</p> </td> <td> <p>Layered chain entry</p> </td> </tr> </tbody> </table> <p>Layered
+ providers use a chain length of zero or greater than 1. Entries whose 
+chain length is zero are special. When a layered provider is installed, 
+the protocol chain must be constructed that describes where the layered 
+provider resides. This is done by filling in the <span>ChainEntries</span> array with the catalog IDs for each protocol in the chain. The catalog ID is the <span>dwCatalogEntryId</span> contained in the <span>WSAPROTOCOL_INFOW</span> structure.</p> <p>Let's
+ look at a quick example before going any further. Say we're developing 
+an LSP that will be layered over the base Microsoft TCP provider. This 
+will require us to install a single provider whose <span>ChainLen</span> will be two. The <span>ChainEntries</span>
+ array will contain two entries: first is the layered provider catalog 
+ID and second is the Microsoft TCP provider catalog ID. The problem is 
+the value to use for the layered provider's catalog ID. When 
+constructing the <span>WSAPROTOCOL_INFOW</span> structure that describes the layered chain for our LSP, the <span>dwCatalogEntryId</span> is not initialized and we cannot simply make one up. A catalog ID is assigned <span>only</span> when a provider is installed via <span>WSCInstallProvider</span>. To solve this problem, a dummy provider entry is installed first whose <span>ChainLen</span>
+ is zero. Once this dummy provider (also known as the layered provider) 
+is installed, the system assigns the catalog ID, which we can then use 
+to install the actual layered chain entry.</p> <p>The dummy layered provider's <span>WSAPROTOCOL_INFOW</span>
+ structure contains meaningless data (except for the path to the 
+provider's DLL, which will be discussed later). Furthermore, an 
+application that calls <span>WSAEnumProtocols</span> will not see any entry with a chain length of zero; only <span>WSCEnumProtocols</span>
+ will return these entries (along with all other entries). When writing 
+the install (and remove) code for service provider, you want to use <span>WSCEnumProtocols</span> or you'll never see the layered provider dummy entries, only base and layered chain entries.</p> <p>Getting
+ back to our example LSP, first the dummy LSP entry is installed, after 
+which the catalog is enumerated so we can find the provider ID of the 
+dummy entry. Then we build the <span>WSAPROTOCOL_INFOW</span> structure, which describes our layered chain. In this structure the <span>ChainLen</span> is 2; <span>ChainEntries</span>
+ contains two values. The first value is the catalog entry ID of the 
+dummy entry just installed and the second array index contains the 
+catalog entry ID of the base TCP provider. Figure 12-3 illustrates three
+ <span>WSAPROTOCOL_INFOW</span> structures. The structure on the left is
+ the default Microsoft TCP provider. The structure in the middle is the 
+dummy LSP entry, and the structure on the right is the layered chain 
+entry for the LSP provider. Notice that the protocol chain for the LSP 
+provider contains two entries. Also notice that the figure illustrates 
+only the first four protocol chain entries while the <span>WSAPROTOCOL_INFOW</span> structure actually contains <span>MAX_PROTOCOL_CHAIN</span> entries (which is seven).</p> <p alt="Graphic Image - " title="Click to view full size" align="center"> <img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/a_002.htm"> </p><p><b>Figure 12-3</b> <i>Example LSP layered over the base Microsoft TCP Provider</i></p> <p></p> <p> </p><p>Installing a Provider Entry</p> <p>Now that we've covered the basics, let's look at the API used to install a Winsock provider, <span>WSCInstallProvider</span>. The API is defined as</p> <p> </p><pre> int WSPAPI WSCInstallProvider( IN LPGUID lpProviderId, IN const WCHAR FAR *lpszProviderDllPath, IN const LPWSAPROTOCOL_INFOW lpProtocolInfoList, IN DWORD dwNumberOfEntries, OUT LPINT lpErrno );</pre> <p></p> <p>The
+ first thing to notice is this API comes in only a UNICODE version. The 
+parameter list is almost self-explanatory. Each provider installed 
+requires a GUID to uniquely identify that provider entry. A GUID can be 
+generated by the command line utility UUIDGEN.EXE or programmatically by
+ <span>UuidCreate</span>. One GUID is required for the dummy layered 
+provider entry and one (or more) is required for the layered chain entry
+ or entries. The <span>lpszProviderDllPath</span> parameter is a UNICODE
+ string that contains the path to the DLL that implements the layered 
+provider. The DLL path can contain environment variables such as 
+%SYSTEMROOT%. This provider path should be correct for both the layered 
+provider entries and layered chain entries. Lastly, note that only 
+members of the Administrators group can install (and remove) Winsock 
+catalog entries.</p> <p> The <span>lpProtocolInfoList</span> is an array of <span>WSAPROTOCOL_INFOW</span> structures. Each entry in the array is a separate provider entry to be installed. <span>dwNumberOfEntries</span>
+ indicates the number of entries in the array. If the provider being 
+installed is layered over multiple providers, they may be installed all 
+at once or one at a time—which is an issue to consider as we will find 
+out later. Of course, the dummy layered provider entry must be installed
+ first by itself to obtain a catalog ID entry used by the layered 
+protocol entries. The last parameter returns the error code in case of a
+ failure, at which point the API returns <span>SOCKET_ERROR</span>.</p> <p>
+ As we have already mentioned, the layered provider entry is meaningless
+ and is installed only to obtain a catalog ID. For layered protocol 
+entries, the <span>WSAPROTOCOL_INFOW</span> structure is typically copied from the provider that is to be layered over with two exceptions. First, the <span>szProtocol</span> field is modified to contain the name of the new provider. Second, the flag <span>XP1_IFS_HANDLES</span> is removed from the <span>dwServiceFlags1</span>
+ field if present. When this flag is set, it indicates that the socket 
+handles that this provider returns are true operating system handles and
+ may be passed interchangeably to APIs that don't specifically take 
+SOCKET handles (such as <span>ReadFile</span> and <span>WriteFile</span>)
+ without taking a performance penalty. For a layered provider to return 
+IFS handles there must be an associated kernel mode component that 
+creates these handles such as what TCPIP.SYS does for the Microsoft TCP 
+and UDP providers. We'll discuss socket handles in more detail later in 
+this chapter.</p> <p>Of course, if the LSP being developed is a 
+completely new protocol, the install application must set the proper 
+flags and fields within the <span>WSAPROTOCOL_INFOW</span> structure to 
+accurately describe the behavior that the provider exposes. See Chapter 2
+ for a full description of the protocol structure.</p> <p> Finally, when
+ installing new provider entries, the entries by default appear at the 
+end of the Winsock catalog when enumerated. If your LSP mimics a TCP/IP 
+provider, it will never be called by default because the system will 
+always match socket creation calls to the MSAFD TCP/IP provider that 
+appears before your LSP's entry in the enumeration (see Chapter 2 for 
+more information on how the system finds the appropriate Winsock 
+provider to load). As a result, it may be necessary to reorder the 
+catalog so that the newly install LSP entries appear first. This is done
+ with the API <span>WSCWriteProviderOrder</span> defined as</p> <p> </p><pre>int WSPAPI WSCWriteProviderOrder( IN LPDWORD lpdwCatalogEntryId, IN DWORD dwNumberOfEntries );</pre> <p></p> <p>The first parameter is an array of <span>DWORD</span>,
+ which contains the catalog entry IDs for every provider in the catalog 
+in the order in which they should be written. For example, if there are 
+20 entries in the Winsock catalog (as returned from <span>WSCEnumProtocols</span>),
+ the array should contain 20 entries, each with the catalog ID of an 
+existing provider. After the API is called, the catalog will be 
+reordered in the sequence specified. The array should not contain any 
+duplicates. Note that this API is defined in the header file SPORDER.H 
+and in the library SPORDER.LIB. On recent Platform SDK releases, the 
+definition of this function has been moved into WS2_32.LIB, and 
+SPORDER.LIB simply contains a forward to that definition.</p> <p> After 
+successfully installing an LSP it is a good idea to reboot the machine. 
+Many of the system services, such as Local Security Authentication 
+Server System (LSASS), create only the majority of their sockets upon 
+bootup and create additional sockets as time goes on. The problem is 
+that after an LSP is installed over the providers they are using, these 
+services now have a mixed set of sockets from multiple providers. This 
+can be problematic if these applications use the select API.</p> <p> To 
+summarize, installing a provider requires the installation of the 
+“dummy” layered provider entry with a chain length of zero. This is 
+necessary to obtain a catalog ID that the layered chain entries can 
+later reference. After the layered provider is installed, each layered 
+chain is installed that references the catalog ID of the layered dummy 
+provider as its first chain entry. The subsequent chain entries are the 
+catalog IDs of the providers layered under this one. Then, in most 
+cases, the Winsock catalog needs to be reordered so that most 
+applications will call into the LSP rather than into the base providers.</p> <p>
+ Note that special consideration must be taken when manipulating the 
+Winsock catalog on 64-bit Windows. In order for 32-bit applications to 
+run on 64-bit Windows, two separate Winsock catalogs are maintained—one 
+for 32-bit applications and one for 64-bit native applications. To 
+manipulate the catalog, several new <span>WSC</span> functions have been introduced. There is a new API for each <span>WSC</span>
+ function that has the string “32” appended to the function name. Note 
+that the parameters remain the same. For example, the function <span>WSCInstallProvider</span> has a corresponding function <span>WSCInstallProvider32</span>.
+ The “normal” function (i.e., not ending in 32) operates on the Winsock 
+catalog for the platform the install application is compiled for. That 
+is, if our LSP install program is compiled for 64-bit Windows, the <span>WSCInstallProvider</span>
+ function installs the LSP into the 64-bit catalog. Likewise, if it was 
+compiled for 32-bit Windows, the LSP would be installed into the 32-bit 
+catalog. The new functions ending in 32 can be used by a native 64-bit 
+application to manipulate the 32-bit catalog.</p> <p> The only problem 
+is what to do if an LSP needs to be installed into both the 32-bit and 
+64-bit catalog. When we build the protocol chain, the same catalog ID 
+for the dummy provider is present in the chain. To solve this problem, 
+there is another version of the install function, <span>WSCInstallProvider64_32</span>.
+ This function installs the provider into both catalogs so that the same
+ catalog ID is assigned to the 32-bit and 64-bit entries. Also note that
+ when installing into both catalogs, two versions of the LSP's DLL need 
+to be present. The native 64-bit compiled version goes in 
+%SYSTEMROOT%\system32, while the 32-bit version is placed in 
+%SYSTEMROOT%\syswow64. Note that it still requires two separate calls to
+ remove the LSP once installed into both catalogs—i.e., there is no 
+equivalent uninstall routine that operates on both catalogs.</p> <p> Finally, the Winsock catalog functions (the <span>WSC</span>
+ variation) also have a new version ending in 32 that follows the same 
+rules discussed above. If a native 64-bit application needs to enumerate
+ both the 32-bit and 64-bit catalogs, it must call <span>WSCEnumProtocols</span> to obtain the 64-bit catalog followed by <span>WSCEnumProtocols32</span>
+ to obtain the 32-bit catalog. There is no method for a 32-bit 
+application to obtain the 64-bit catalog, which is true for all 32-bit 
+applications (i.e., a 32-bit application has no way of manipulating the 
+64-bit catalog).</p> <p></p> <p> </p><p>Removing an LSP</p> <p>Once an LSP is installed into the Winsock catalog, removing the provider is, in most cases, an easy process. The function <span>WSCDeinstallProvider</span> will remove all the catalog entries associated with the given GUID. This API is defined as</p> <p> </p><pre>int WSPAPI WSCDeinstallProvider( IN LPGUID lpProviderId, OUT LPINT lpErrno );</pre> <p></p> <p>In
+ the simple case, an LSP will require two GUIDs: one for the dummy entry
+ and one for all of the layered chain entries. To completely remove the 
+LSP in this case, call <span>WSCDeinstallProvider</span> once for each 
+GUID. Of course, if the layered chain providers were installed using 
+multiple GUIDs, the uninstall code will have to call <span>WSCDeinstallProvider</span> on each one.</p> <p>
+ Uninstalling an LSP becomes extremely complicated if after your LSP is 
+installed, another LSP is installed over it. The second LSP's chain 
+entries will contain references to your LSP's catalog IDs. If your LSP 
+is blindly uninstalled, the second LSP is broken. If the second LSP is 
+exposing itself as a TCP/IP and UDP/IP provider, most likely the system 
+won't boot or will have no network access.</p> <p> In this situation, 
+the uninstall code for your LSP must check for any other Winsock entries
+ that reference your LSP's catalog IDs within its protocol chain. If it 
+finds other entries, the uninstaller must copy them, uninstall them, 
+remove your LSP's entry from its protocol chain, and install it back 
+into the catalog. For example, consider the case illustrated in Table 
+12-4. There are two LSPs in this example. LSP1 is installed over the 
+base TCP/IP and UDP/IP providers, and LSP2 is installed over LSP1's 
+TCP/IP and UDP/IP providers. To remove LSP1, we must also fix LSP2's 
+entries so that they no longer reference catalog ID's 1010 and 1011. To 
+do this, the uninstaller for LSP1 must find all entries that reference 
+any of LSP1's catalog Ids, which in this case are entries 1021 and 1022.
+ These entries should be saved off and uninstalled. Then the saved 
+entries should be modified so that their chain lengths are 2 and any 
+reference to 1010 or 1011 in their protocol chains are removed. Finally,
+ these entries should be installed under the same GUID as before. The 
+entry for 1021 should have a protocol chain of 1020 followed by 1001 and
+ the entry for 1022 should be 1020 and 1002. Note that after 
+re-installing the provider, the entry will appear at the end of the 
+catalog when enumerated. It may be necessary to reorder the catalog to 
+put the LSP2 entries back to their original locations.</p> <table tabstyle="DevStand table w/title" cellspacing="0" cellpadding="0" align="center"> <caption><b>Table 12-4</b> <i>Winsock Catalog with Multiple LSPs</i></caption> <thead> <tr> <td> <p>Catalog  ID</p> </td> <td> <p> Description</p> </td> <td> <p>Address  Family/Protocol</p> </td> <td> <p>Chain Length</p> </td> <td> <p> Protocol Chain</p> </td> </tr> </thead> <tbody> <tr> <td> <p>1021</p> </td> <td> <p>LSP2</p> </td> <td> <p>TCP/IP</p> </td> <td> <p>3</p> </td> <td> <p>1020 —&gt; 1010 —&gt; 1001</p> </td> </tr> <tr> <td> <p>1022</p> </td> <td> <p>LSP2</p> </td> <td> <p>UDP/IP</p> </td> <td> <p>3</p> </td> <td> <p>1020 —&gt; 1011 —&gt; 1002</p> </td> </tr> <tr> <td> <p>1020</p> </td> <td> <p>LSP2 Dummy</p> </td> <td> <p>N/A</p> </td> <td> <p>0</p> </td> <td> <p>N/A</p> </td> </tr> <tr> <td> <p>1010</p> </td> <td> <p>LSP1</p> </td> <td> <p>TCP/IP</p> </td> <td> <p>2</p> </td> <td> <p>1009 —&gt; 1001</p> </td> </tr> <tr> <td> <p>1011</p> </td> <td> <p>LSP1 </p> </td> <td> <p>UDP/IP</p> </td> <td> <p>2</p> </td> <td> <p>1009 —&gt; 1002</p> </td> </tr> <tr> <td> <p>1009</p> </td> <td> <p>LSP1 Dummy</p> </td> <td> <p>N/A</p> </td> <td> <p>0</p> </td> <td> <p>N/A</p> </td> </tr> <tr> <td> <p>1001</p> </td> <td> <p>MSAFD TCP/IP</p> </td> <td> <p>TCP/IP</p> </td> <td> <p>1</p> </td> <td> <p>N/A</p> </td> </tr> <tr> <td> <p>1002</p> </td> <td> <p>MSAFD UDP/IP</p> </td> <td> <p>UDP/IP</p> </td> <td> <p>1</p> </td> <td> <p>N/A</p> </td> </tr> </tbody> </table> <p></p> <p> </p><p>Modifying LSP Entries</p> <p>As
+ you can see, uninstalling a provider when other providers have layered 
+over it is a horrendous task—especially in the complicated cases in 
+which the second provider layered over yours is layered over many other 
+providers and all installed with the same GUID! As a result, Windows XP 
+introduces a new API designed to ease the pain of uninstalling 
+providers. This API allows you to modify an existing provider without 
+uninstalling it. This function is <span>WSCUpdateProvider</span> and is defined as</p> <p> </p><pre>int WSPAPI WSCUpdateProvider( IN LPGUID lpProviderId, IN const WCHAR FAR *lpszProviderDllPath, IN const LPWSAPROTOCOL_INFOW lpProtocolInfoList, IN DWORD dwNumberOfEntries, OUT LPINT lpErrno );</pre> <p></p> <p>The parameter list is the same as for <span>WSCInstallProvider</span>
+ except that instead of installing a new provider in the catalog, this 
+API updates the providers referenced by the supplied GUID. With this API
+ you can update any of the fields within an existing provider's entry 
+except for its provider ID (GUID). So for the example given in Table 
+12-4, this makes fixing LSP2 almost trivial because all that needs to be
+ modified are the protocol chains and chain length.</p> <p></p> <p></p> <p> </p><p>Writing the Layered Provider</p> <p>As we mentioned previously, an LSP is implemented in a DLL. There are three important parts to layered providers: the <span>WSPStartup</span> function, tracking socket handles, and handling the various I/O models (such as <span>select</span>, <span>WSAEventSelect</span>, <span>WSAAsyncSelect</span>,
+ overlapped, and completion ports). Of course, this doesn't include the 
+difficulty of implementing the functionality that the LSP provides (such
+ as HTTP proxy, and SSL sockets).</p> <p>In addition to the three important tasks there is the matter of handling the Microsoft-specific Winsock extensions such as <span>AcceptEx</span> and <span>TransmitFile</span>.
+ This topic is covered after the main three tasks. Finally, there are a 
+few minor tasks that an LSP must implement to achieve 100 percent 
+compatibility. The last few sections discuss these tasks in detail.</p> <p> </p><p>Initializing the Provider</p> <p>Each LSP must implement and export the <span>WSPStartup</span> function. The function is prototyped as</p> <p> </p><pre>int WSPAPI WSPStartup( WORD wVersion, LPWSPDATA lpWSPData, LPWSAPROTOCOL_INFOW lpProtocolInfo, WSPUPCALLTABLE UpCallTable, LPWSPPROC_TABLE lpProcTable );</pre> <p></p> <p>The first parameter is the Winsock version that the application requested. The <span>lpWSPData</span> parameter is a <span>WSPDATA</span>
+ structure, which is a subset of the WSADATA structure seen in Chapter 
+1. The LSP must fill in the WSPDATA structure provider to indicate the 
+Winsock version supported. The <span>lpProtocolInfo</span> structure is a <span>WSAPROTOCOL_INFOW</span> structure corresponding to the provider being loaded. With an LSP, this is one of the protocol structures of our LSP. The <span>UpCallTable</span>
+ parameter is an input parameter that contains function pointers to 
+various Winsock support routines which we will discuss later. Finally, 
+the <span>lpProcTable</span> is a structure of function pointers to 
+those Winsock provider functions that the LSP implemented that it must 
+completely fill in before returning.</p> <p> Before getting into the 
+specifics of initializing a layered service provider, let's look at what
+ happens when the system invokes an LSP's <span>WSPStartup</span> function. When an application calls <span>WSAStartup</span>, the system takes no action and it's not until the application actually creates a socket that a provider's <span>WSPStartup</span>
+ is called. When the application creates the socket, the system searches
+ the Winsock catalog for a matching entry as described in Chapter 2. 
+When the matching entry is found, the system loads the provider's DLL 
+and invokes its <span>WSPStartup</span> function.</p> <p> The second issue is how many times you can expect your LSP's <span>WSPStartup</span>
+ to be invoked, which depends on how the LSP is installed. For example, 
+consider a system with two layered protocol entries, as shown in Figure 
+12-4. Two layered protocol entries are on the left side of the diagram: 
+one layered over the MSAFD TCP/IP provider and the other layered over 
+the MSAFD IPX provider. Note that both of these entries were installed 
+in the same call to <span>WSCInstallProvider</span> because they both 
+contain the same provider GUID. If an application creates a TCP/IP 
+socket, at that point the system loads the LSP and calls its <span>WSPStartup</span> function. Afterward, if the application creates an IPX socket, the system will not invoke the <span>WSPStartup</span>
+ function again as it has already been invoked for the provider with 
+GUID A. Also, any further TCP/IP or IPX sockets created will not invoke 
+additional calls to <span>WSPStartup</span>.</p> <p alt="Graphic Image - " title="Click to view full size" align="center"> <img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/a.htm"> </p><p><b>Figure 12-4</b> <i>WSPStartup calling behavior</i></p> <p></p> <p>However, if the layered protocol entries for TCP/IP and IPX were installed separately with two calls to <span>WSCInstallProvider</span> (and therefore two different GUIDs), when the application creates the first TCP/IP socket the LSP's <span>WSPStartup</span> is invoked. Then when the application creates an IPX socket the system invokes the <span>WSPStartup</span> function once more as the provider corresponding to GUID B has not been initialized yet.</p> <p>This
+ is an important consideration because it dictates how much 
+initialization overhead is required. For example, consider the LSP that 
+layers over every installed protocol—such as a content filter. In this 
+case, there could be multiple protocols and multiple provider entries 
+for each protocol. If the LSP's layered protocol entries are installed 
+all at once under the same GUID, the LSP's <span>WSPStartup</span> will 
+be called no more than once when the application creates a socket. 
+However, most applications tend to create sockets from a single address 
+family that corresponds to two or three provider entries (for example, 
+IPv4 has three entries: TCP/IP, UDP/IP, and RAW/IP). In this case, the 
+LSP may require setting up multiple internal data structures for each 
+provider: IPv4, IPv6, IPX/SPX, NetBIOS, AppleTalk, and IrDA. However, if
+ the LSP's layered protocol entries are installed in groups 
+corresponding to the different address families, the necessary internal 
+data structure can be allocated only when the calling application 
+decides to use that particular protocol. The decision to install under a
+ single or multiple GUIDs is completely up to the LSP implementer, but 
+it is a good idea to know how often <span>WSPStartup</span> will be invoked.</p> <p>Getting back to the initialization steps, here are the three tasks an LSP must perform within its <span>WSPStartup</span> function:</p> <ol> <li> <p> Keep track of how many times <span>WSPStartup</span> has been invoked.</p> </li> <li> <p> Initialize the <span>lpWSPData</span> and <span>lpProcTable</span> parameters.</p> </li> <li> <p> Find its location within the protocol chain and initialize the lower layer(s).</p> </li> </ol> <p>The first requirement is fairly simple. The LSP should keep track of how many times <span>WSPStartup</span>
+ has been called so that each time it is invoked a simple reference 
+count should be incremented. A provider may need to initialize some 
+internal data structures, which will most likely occur on the first call
+ to <span>WSPStartup</span>. Likewise, an LSP must implement <span>WSPCleanup</span>,
+ at which point the reference count should be decremented. Once the 
+count reaches zero, any internal data structures and all other 
+dynamically allocated resources should be freed.</p> <p>The second requirement is also simple. The LSP must initialize the <span>WSPDATA</span> and <span>WSPPROC_TABLE</span> parameters. For the <span>WSPDATA</span> structure, the LSP can either verify that the Winsock version is correct itself or it may pass the <span>lpWSPData</span> parameter into the lower provider's <span>WSPStartup</span> function when initializing the lower layers (discussed next) if the LSP does not want to validate the parameters. The <span>WSPPROC_TABLE</span> is a giant structure containing function pointers for all the functions implemented in the LSP. The layered service provider <span>must</span> initialize every pointer.</p> <p>The
+ third requirement is a bit more complex. The layered provider needs to 
+“load” the providers appearing beneath it in the protocol chain. If the 
+LSP is layered above multiple lower layers, load the provider underneath
+ each of the LSP's provider entries. How does the LSP find where it 
+resides within the chain? The <span>lpProtocolInfo</span> parameter passed to <span>WSPStartup</span>
+ is the provider entry for one of the LSP's protocol chain entries. As 
+we touched on previously, this will match one of the LSP's providers 
+depending on the type of socket the application created first.</p> <p>As we mentioned, the system passes a <span>WSAPROTOCOL_INFOW</span>
+ structure of the layered provider corresponding to the socket that the 
+application is creating from one of the LSP's layered protocol entries. 
+The first entry within the protocol chain array is the catalog ID for 
+the LSP. Given this value, the Winsock catalog can be enumerated and the
+ remaining layered chain providers can be found. The second index of the
+ chain array of each LSP entry contains the catalog ID of the underlying
+ provider that needs to be loaded.</p> <p>Loading the underlying provider is a simple process. For each underlying provider, call <span>WSCGetProviderPath</span> to obtain the location of the DLL implementing that provider. This function is prototyped as</p> <p> </p><pre>int WSCGetProviderPath( LPGUID lpProviderId, LPWSTR lpszProviderDllPath, LPINT lpProviderDllPathLen, LPINT lpErrno );</pre> <p></p> <p>After obtaining the provider's DLL path, <span>LoadLibrary</span> is called on it, followed by <span>GetProcAddress</span> for that DLL's <span>WSPStartup</span> function. Initializing the lower layer is simply calling that DLL's <span>WSPStartup</span>. Again, the <span>lpWSPData</span> passed to your LSP's <span>WSPStartup</span> can be passed to the lower provider's <span>WSPStartup</span> call so that it can verify the version requested is correct.</p> <p> </p><table cellspacing="0" cellpadding="0"> <tbody><tr height="10"><td height="10" align="left"><img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/ra_corner_top_left.gif" width="10" height="10"></td> <td height="10" align="right"><img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/ra_corner_top_right.gif" width="10" height="10"></td> </tr><tr> <td valign="top"><img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/note.gif" alt="note"></td> <td valign="top"> <p>For
+ Windows 95, Windows 98, and Windows Me, a provider's DLL path is always
+ returned as a UNICODE string so that it must be converted to ANSI and 
+LoadLibraryA must be used.</p> </td> </tr><tr height="10"> <td height="10" align="left"><img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/ra_corner_bottom_left.gif" width="10" height="10"></td> <td height="10" align="right"><img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/ra_corner_bottom_right.gif" width="10" height="10"></td> </tr></tbody></table> <p></p> <p>Each lower provider initialized by calling its <span>WSPStartup</span> must follow the same rules that are applied to your LSP's <span>WSPStartup</span>. You must pass in a <span>WSPDATA</span> structure as well as the <span>WSAPROTOCOL_INFOW</span>
+ structure for that provider's entry regardless of whether it is a base 
+provider or another layered provider. For example, if the underlying 
+provider is the MSAFD TCP/IP provider, the <span>WSAPROTOCOL_INFOW</span>
+ structure passed is the MSAFD TCP/IP provider and not the LSP's layered
+ protocol entry. Each lower provider will initialize the <span>WSPPROC_TABLE</span>
+ passed into it with a list of its function pointers. The LSP must save 
+off this function table. When an application makes a Winsock call into 
+your LSP, your LSP must eventually call the lower provider's 
+corresponding Winsock function (unless the LSP's purpose is to prevent 
+or prohibit that action).</p> <p>In the sample LSP provided on the 
+companion CD, the following structure is allocated for each layered 
+chain entry that comprises our LSP:</p> <p> </p><pre>typedef struct _PROVIDER {     WSAPROTOCOL_INFOW NextProvider,                       LayeredProvider;     WSPPROC_TABLE     NextProcTable;     EXT_WSPPROC_TABLE NextProcTableExt;     WCHAR             ProviderPathW[MAX_PATH],                       LibraryPathW[MAX_PATH];     char              ProviderPathA[MAX_PATH],                       LibraryPathA[MAX_PATH];     int               ProviderPathLen;     HINSTANCE         hProvider;     LPWSPSTARTUP      lpWSPStartup;     SOCK_INFO        *SocketList; } PROVIDER;</pre> <p></p> <p>This structure keeps track of a layered chain entries' protocol structure (<span>LayeredProvider</span>) as well as the underlying provider's protocol structure (<span>Next-Provider</span>). The underlying provider's procedure table is stored in <span>NextProcTable</span> and <span>NextProcTableExt</span>
+ is our own structure of Microsoft-specific Winsock functions that the 
+lower provider exposes. We'll discuss these entries in detail later. In 
+addition, both the UNICODE and ANSI versions of the provider's path are 
+saved (<span>ProviderPath</span>). The <span>LibraryPath</span> fields contain the same data as the <span>ProviderPath</span> field except that all system variables are expanded via the <span>ExpandEnvironmentStrings</span> API. <span>hProvider</span> saves off the handle returned from <span>LoadLibrary</span> and <span>lpWSPStartup</span> contains the address for that DLL's <span>WSPStartup</span> function. Lastly, <span>SocketList</span> is a linked list of all sockets this provider created. This field will become important later.</p> <p>Before going any farther, let's summarize the steps involved in initializing an LSP:</p> <ol> <li> <p> Verify the correct Winsock version requested.</p> </li> <li> <p> Increment the reference count.</p> </li> <li> <p> Save the <span>WSPUPCALLTABLE</span> passed in.</p> </li> <li> <p>
+ Find the Winsock providers layered underneath this LSP's providers. 
+(Note that this may be a subset if this LSP's layered protocol entries 
+were installed under separate GUIDs.)</p> </li> <li> <p> Allocate a <span>PROVIDER</span> structure for each layered entry.</p> </li> <li> <p> Load each underlying provider's DLL and invoke its <span>WSPStartup</span>.</p> </li> <li> <p> Save the <span>WSPPROC_TABLE</span> returned from each underlying provider.</p> </li> </ol> <p>If any one of these steps fails, the LSP's <span>WSPStartup</span> should return an error. There are several relevant Winsock error codes usually associated with startup, which are</p> <ul> <li> <p> <span>WSAEINVALIDPROCTABLE</span>&nbsp;Indicates the lower layer returned an invalid proc table (for example, one or more entries are NULL).</p> </li> <li> <p> <span>WSAEPROVIDERFAILEDINIT</span>&nbsp;Indicates the LSP encountered an error that prevents it from initializing properly.</p> </li> </ul> <p>Of
+ course, if there is a more specific Winsock error code for the type of 
+error encountered, that should be used. For example, if during startup 
+the LSP dynamically allocates memory but that call fails, <span>WSAENOBUFS</span> should be returned.</p> <p></p> <p> </p><p>Creating Sockets</p> <p>The
+ next important task of layered service providers is creating socket 
+handles. The sequence of events covered so far is the application 
+creates a socket whose parameters match an entry of our LSP. Next, the 
+system loads our LSP by calling its <span>WSPStartup</span>, and obtains the LSP's function dispatch table, and calls our LSP's <span>WSPSocket</span>
+ function to create a socket to return to the application. Because we 
+are dealing with layered providers and not transport providers, the LSP 
+has no way of creating true operating system handles. As a result, the 
+“real” socket handle is obtained by calling the underlying provider's <span>WSPSocket</span> function. Remember that we obtained the lower provider's <span>WSPPROC_TABLE</span> when it was loaded by our LSP's <span>WSPStartup</span>.</p> <p>Within your LSP's <span>WSPSocket</span>
+ function, it must validate the address family, socket type, and 
+protocol parameters, and find which underlying provider should be 
+used—assuming your LSP is installed over multiple entries. Keep in mind 
+that for some transport protocols it is valid for the protocol parameter
+ to the socket creation API call to be zero. For example, if our LSP is 
+layered over MSAFD TCP/IP and MSAFD UDP/IP and the application makes the
+ following socket call: <span>s = socket(AF_INET, SOCK_STREAM, 0); </span>our LSP's <span>WSPSocket</span>
+ function will be called with those same parameters. The LSP must then 
+determine that this matches the LSP's entry layered over MSAFD TCP/IP. 
+Then we must find the function table returned from our startup call to 
+the DLL implementing MSAFD TCP/IP, at which point its <span>WSPSocket</span> can be called. In addition, the calling application may pass in the <span>WSAPROTOCOL_INFO</span> structure, which will belong to the LSP. Before creating a socket from the lower provider, its <span>WSAPROTOCOL_INFO</span> structure should be substituted.</p> <p>
+ Once a socket is created from the underlying provider, there are two 
+options. The first is to simply return that socket handle. The problem 
+with this is there will be no way to modify or monitor data sent or 
+received on that socket. In the next section, we will go into detail on 
+why this is the case. The second option is to return a “dummy” handle. 
+The LSP then associates this dummy handle with the handle that the lower
+ provider returned. Now whenever the application calls a Winsock API 
+with our dummy handle, it is routed into our LSP, at which point the LSP
+ finds the lower provider's handle associated with the dummy handle and 
+calls the same Winsock API of the lower provider with the lower provider
+ handle.</p> <p> These dummy handles are created by calling <span>WPUCreateSocketHandle</span>. Note that the LSP cannot call this API directly. Instead, the function pointer to this API is provided in the <span>WSPUPCALLTABLE</span> passed into the LSP's <span>WSPStartup</span> routine. The prototype is</p> <p> </p><pre>SOCKET WPUCreateSocketHandle( DWORD dwCatalogEntryId, DWORD_PTR dwContext, LPINT lpErrno );</pre> <p></p> <p>The
+ first parameter is the catalog ID of the LSP's layered protocol chain. 
+The second parameter is any data blob that you wish to associate with 
+the SOCKET handle returned. The last parameter indicates the error code 
+in case this API call fails.</p> <p> Typically, the LSP creates a socket
+ from the lower provider and then allocates a data structure that 
+contains context information for this socket. In the sample LSP the 
+following context structure is used:</p> <p> </p><pre>typedef struct _SOCK_INFO {    SOCKET ProviderSocket;     // Lower provider socket handle    SOCKET LayeredSocket;      // App's socket handle    DWORD  dwOutstandingAsync; // Count of outstanding async operations    BOOL   bClosing;          // Has the app closed the socket?    volatile LONG  RefCount;  // Reference count    DWORD  BytesSent;         // Byte counts    DWORD  BytesRecv;    HANDLE hIocp;             // Associated with an IOCP?    HWND   hWnd;              // Window (if any) associated with socket    UINT   uMsg;              // Message for socket events    CRITICAL_SECTION  SockCritSec; // Protect access to this object    struct _PROVIDER  *Provider;// Which provider this belongs to?    struct _SOCK_INFO *prev,  // Used to link these structures together                      *next; } SOCK_INFO;</pre> <p></p> <p>This
+ is a lot of information but it is necessary for a robust LSP. The first
+ field is the socket handle that the underlying provider returned. The 
+second field is the handle returned from <span>WPUCreateSocketHandle</span>. When we call <span>WPUCreateSocketHandle</span> we pass the address of a <span>SOCK_INFO</span>
+ structure as the context information. The majority of the remaining 
+fields deal with handling socket I/O, which is discussed in the next 
+section.</p> <p> We can now construct the basic outline of the LSP's <span>WSPSocket</span> API. It would look like the following example:</p> <p> </p><pre>SOCKET WSPAPI WSPSocket(     int                 af,     int                 type,     int                 protocol,     LPWSAPROTOCOL_INFOW lpProtocolInfo,     GROUP               g,     DWORD               dwFlags,     LPINT               lpErrno) { PROVIDER  *Provider=NULL; SOCK_INFO *Context;        SOCKET  ProviderSocket,                LayeredSocket;        // Validate the arguments first        // Find the PROVIDER structure for the layered protocol entry        // that matches the given arguments - set as Provider        // Substitute lpProtocolInfo with the lower provider's if it         // is supplied.        ProviderSocket = Provider-&gt;NextProcTable.lpWSPSocket(                af,                type,                protocol,                lpProtocolInfo,                g,                dwFlags,                pErrno                );        if (ProviderSocket != INVALID_SOCKET) {            Context = AllocateContext(); // Allocate a SOCK_INFO struct            LayeredSocket = MainUpCallTable.lpWPUCreateSocketHandle(                Provider-&gt;LayeredProvider.ProtocolChain.ChainEntries[0],                (DWORD_PTR) Context,                lpErrno                );            if (LayeredSocket == INVALID_SOCKET) { // Handle failure } Context-&gt;LayeredSocket = LayeredSocket; Context-&gt;ProviderSocket = ProviderSocket; } return LayeredSocket; }</pre> <p></p> <p> There are a couple of significant fields in the <span>SOCK_INFO</span> structure that should be discussed. The <span>bClosing</span> field indicates whether the application has called <span>WSPCloseSocket</span>
+ on the dummy socket handle. If there are any outstanding I/O 
+operations, then the LSP must not free the socket's context information 
+until all the I/O has completed (most likely with errors). Also, a 
+reference count is maintained (via <span>RefCount</span>) so that if the
+ calling application is multi-threaded and one thread is using the 
+socket and another thread closes the socket, the LSP will not free the <span>SOCK_INFO</span> structure underneath the first thread (and cause an access violation).</p> <p>
+ The LSP must implement each of the SPI functions listed in Table 12-2. 
+For those functions that do not create socket handles (for example, 
+everything but <span>WSPSocket</span>, <span>WSPAccept</span>, and <span>WSPJoinLeaf</span>)
+ but take a socket handle as a parameter, it is necessary to translate 
+the application's socket handle into the underlying handle. Remember 
+that a SOCK_INFO structure was associated with each dummy socket handle.
+ This context information can be retrieved by calling <span>WPUQuerySocketHandleContext</span>. Again, this function is found in the <span>WSPUPCALLTABLE</span> structure. This API is defined as</p> <p> </p><pre>int WSPAPI WPUQuerySocketHandleContext( SOCKET s, LPDWORD_PTR lpContext, LPINT lpErrno );</pre> <p></p> <p>For example, let's take a look at how an LSP might implement the <span>WSPGetSockOpt</span> function.</p> <p> </p><pre>int WSPAPI WSPGetSockOpt( SOCKET s, int level, int optname, char FAR *optval, LPINT optlen, LPINT lpErrno ) { SOCK_INFO *lpContext=NULL; int rc=NO_ERROR; rc = MainUpCallTable.lpWPUQuerySocketHandleContext( s, (LPDWORD_PTR)&amp;lpContext, &amp;err ); if (rc == SOCKET_ERROR) { *lpErrno = WSAENOTSOCK; } else { rc = lpContext-&gt;Provider-&gt;NextProcTable.lpWSPGetSockOpt( lpContext-&gt;ProviderSocket, level, optname, optval, optlen, &amp;lpErrno ); } return rc; }</pre> <p></p> <p>In
+ this example, we first query for the context information. If it cannot 
+be found, we return the error WSAENOTSOCK. Otherwise, we simply call the
+ underlying provider's <span>WSPGetSockOpt</span> function with the 
+correct socket handle. Note that in a real implementation when the 
+socket context is looked up, the reference count would be incremented 
+and before returning from the SPI function the reference count would be 
+decremented. In the sample LSP, two helper routines are defined to do 
+this. They are <span>FindAndLockSocketContext</span> and <span>UnlockSocketContext</span>, which are listed below.</p> <p> </p><pre>SOCK_INFO *FindAndLockSocketContext(SOCKET s, int *lpErrno) {     SOCK_INFO *SocketContext=NULL;     int        ret;     EnterCriticalSection(&amp;gCriticalSection);     ret = MainUpCallTable.lpWPUQuerySocketHandleContext(             s,             (PDWORD_PTR) &amp;SocketContext,             lpErrno             );     if (ret == SOCKET_ERROR)     {         SocketContext = NULL;     }     else     {         InterlockedIncrement(&amp;SocketContext-&gt;RefCount);     }     LeaveCriticalSection(&amp;gCriticalSection);     return SocketContext; } void UnlockSocketContext(SOCK_INFO *context) {     EnterCriticalSection(&amp;gCriticalSection);     InterlockedDecrement(&amp;context-&gt;RefCount);     LeaveCriticalSection(&amp;gCriticalSection); }</pre> <p></p> <p>In this code sample, <span>gCriticalSection</span> is a global <span>CRITICAL_SECTION</span> object for the entire DLL. By calling <span>FindAndLockSocketContext</span> before using any socket within an SPI function (for any <span>WSP </span>function
+ or any support function that needs to query for the socket context), we
+ ensure that multi-threaded applications that close sockets in the 
+middle of other operations will not cause an access violation. Of 
+course, it is important to ensure that a corresponding call to <span>UnlockSocketContext</span> occurs before returning from the SPI function.</p> <p>The
+ last consideration for socket creation comes when the application 
+closes a socket handle. First, query for the socket context of the 
+supplied handle. Note that this action will cause the socket's reference
+ count to be incremented by one (meaning that if the reference count is 
+greater than one, another thread is accessing the structure). The next 
+step is to close the underlying provider's socket handle, which is 
+contained in the <span>ProviderSocket</span> field of the <span>SOCK_INFO</span>
+ structure. This is necessary so that any outstanding I/O operations 
+will complete with the proper error (discussed in the next section).</p> <p>However, if the socket context does indicate that there is outstanding asynchronous I/O (indicated via the <span>dwOutstandingAsync</span>
+ field of the context information) or if the reference count is greater 
+than zero, then we cannot close the dummy socket handle yet. Instead, we
+ mark the socket context structure as closing (by setting <span>bClosing</span> to <span>TRUE</span>).
+ If we didn't, then if the application created another socket, the 
+handle value could be re-used, which can cause subtle and hard-to-find 
+problems. For example, consider the case in which two threads are 
+accessing a socket whose handle value is 0x300. If one thread closes the
+ socket and the second thread is about to access it, the socket is 
+closed and the context information removed. Then a third thread creates a
+ new socket and is assigned the handle value 0x300. The thread that was 
+about to access the socket now looks up the context and is returned this
+ new socket's context. At this point, the new socket may be in the wrong
+ state (for example, not connected when it should) or could even be a 
+socket of the wrong protocol. Whatever API uses this socket will most 
+likely fail with a very unexpected error code such as <span>WSAENOTCONN</span> or <span>WSAEOPNOTSUPP</span>.</p> <p>Only
+ when the reference count indicates no other thread is accessing the 
+socket context information and the outstanding operation count is zero 
+can the dummy socket be closed and the context information be freed. 
+After asynchronous I/O has completed and when the reference count is 
+decremented, the <span>bClosing</span> field of the socket context should be checked. If it is <span>TRUE</span>, it indicates that the application has closed the socket and the dummy handle needs to be closed when it is safe to do so.</p> <p>Once it is determined safe to close the socket, this is done with the <span>WPUCloseSocketHandle</span> API, which is another function contained in the <span>WSPUPCALLTABLE</span> structure. This function is defined as</p> <p> </p><pre>int WSPAPI WPUCloseSocketHandle( IN SOCKET s, OUT LPINT lpErrno );</pre> <p></p> <p>Finally, remember that the functions <span>WSPAccept</span> and <span>WSPJoinLeaf</span> also return socket handles and the same steps just described for <span>WSPSocket</span> apply. Once a new socket handle is returned from the lower provider, an application socket is created with <span>WPUCreateSocketHandle</span>,
+ context information is associated with it, and this application socket 
+is returned to the caller. However, in some instances the <span>WSPJoinLeaf</span> SPI function does not create a new socket (more on this later).</p> <p></p> <p> </p><p>Handling I/O</p> <p>The
+ last major task to creating an LSP is handling the various types of I/O
+ an application might initiate on a socket. Remember from Chapter 5 that
+ there are a number of I/O models an application may use: blocking 
+sockets, <span>select</span>, <span>WSAAsyncSelect</span>, <span>WSAEventSelect</span>,
+ overlapped I/O, and completion ports. As we mentioned previously, if an
+ LSP wishes to modify or monitor data send or received, it must create 
+its own socket handles with <span>WPUCreateSocketHandle</span> and must 
+handle all possible types of I/O that may occur on the socket. In this 
+section we'll look at each of the I/O models and discuss what steps must
+ be made for each to work.</p> <p>Before getting into each of the I/O 
+models, it is worthwhile to mention some common rules that apply to all 
+types of I/O. First, if an LSP needs to modify the send buffers, it 
+should not modify the data within the application's buffer—it should 
+make its own copy. Also, LSPs should not behave contrary to the type of 
+I/O initiated. If an application has put a socket into non-blocking 
+mode, the LSP should not block when handling operations that would 
+normally fail with <span>WSAEWOULDBLOCK</span>.</p> <p> </p><p>Blocking and Non-blocking</p> <p>For
+ the most basic I/O blocking and non-blocking sockets there really isn't
+ much to do. For those SPI functions that send and receive data, all the
+ LSP needs to do is translate the socket handle to the provider's socket
+ handle and call the lower provider's function. For example, the <span>WSPSend</span> function for an LSP would look like the following code:</p> <p> </p><pre>int WSPAPI WSPSend(     SOCKET          s,     LPWSABUF        lpBuffers,     DWORD           dwBufferCount,     LPDWORD         lpNumberOfBytesSent,     DWORD           dwFlags,     LPWSAOVERLAPPED lpOverlapped,     LPWSAOVERLAPPED_COMPLETION_ROUTINE lpCompletionRoutine,     LPWSATHREADID   lpThreadId,     LPINT           lpErrno     ) { SOCK_INFO *SocketContext=NULL; int          ret; // Get the context info SocketContext = FindAndLockSocketContext(s, lpErrno); if (lpOverlapped == NULL) // Make sure this is not overlapped { SetBlockingProvider(SocketContext-&gt;Provider); ret = SocketContext-&gt;Provider-&gt;NextProcTable.lpWSPSend( SocketContext-&gt;ProviderSocket, lpBuffers, dwBufferCount, lpNumberOfBytesSent, dwFlags, NULL, NULL, lpThreadId, lpErrno ); SetBlockingProvider(NULL); } UnlockSocketContext(SocketContext); return ret; }</pre> <p></p> <p>This
+ is a very straightforward process: find the socket context and call the
+ lower provider. For compatibility with 16-bit Winsock, we do have to 
+keep track of which provider is blocking in case the application calls <span>WSACancelBlockingCall</span>, which is what the <span>SetBlockingProvider</span> function does. It saves off the address of our <span>PROVIDER</span> structure, which is currently issuing a blocking call for that thread. If the application calls <span>WSACancelBlockingCall</span>, all we have to do is call the blocking lower layer's <span>WSPCancelBlockingCall</span>. The <span>SetBlockingProvider</span> routine uses thread local storage to save the pointer to the current <span>PROVIDER</span> issuing a blocking call.</p> <p></p> <p> </p><p><span>Select</span> and <span>WSPSelect</span></p> <p>When an  application uses the <span>select</span> API to wait for events on a set of sockets, things get a bit complicated. The <span>select</span> API will map to the SPI function <span>WSPSelect</span> and requires some work before passing the call down to the lower provider. There are three <span>FD_SET</span>
+ structures passed in that reference the layered sockets and not the 
+underlying provider's sockets. Because of this, the socket context for 
+each socket contained in the <span>FD_SET</span>s must be obtained and a new <span>FD_SET</span> built that contains the lower provider's sockets.</p> <p>The following code shows how to translate the <span>fdread</span> <span>FD_SET</span> passed into <span>WSPSelect</span>.</p> <p> </p><pre>int WSPAPI WSPSelect(     int          nfds,     fd_set FAR * readfds,     fd_set FAR * writefds,     fd_set FAR * exceptfds,     const struct timeval FAR * timeout,     LPINT        lpErrno) { FD_SET ReadFds, WriteFds, ExceptFds, int ret, HandleCount, count; // Simple structure to quickly map LSP sockets to provider sockets struct { SOCKET LayeredSocket; SOCKET ProviderSocket; } Read[FD_SETSIZE], Write[FD_SETSIZE], Except[FD_SETSIZE]; // Translate LSP handles into provider handles if (readfds) { FD_ZERO(&amp;ReadFds); for(i=0; i &lt; readfds-&gt;fd_count ;i++) { SocketContext = FindAndLockSocketContext( (Read[i].LayeredSocket = readfds-&gt;fd_array[i]), lpErrno ); Read[i].ProviderSocket = SocketContext-&gt;ProviderSocket; FD_SET(Read[i].ProviderSocket, &amp;ReadFds); UnlockSocketContext(SocketContext); } } // Do the same for writefds // Do the same for exceptfds SetBlockingProvider(SocketContext-&gt;Provider); ret = SocketContext-&gt;Provider-&gt;NextProcTable.lpWSPSelect( nfds, (readfds ? &amp;ReadFds : NULL), (writefds ? &amp;WriteFds : NULL), (exceptfds ? &amp;ExceptFds : NULL), timeout, lpErrno ); SetBlockingProvider(NULL); HandleCount = ret; // Map the signaled provider handles back to the LSP handles if (readfds) { count = readfds-&gt;fd_count; FD_ZERO(&amp;readfds); for(i=0; (i &lt; count) &amp;&amp; HandleCount ;i++) { 5 if (MainUpCallTable.lpWPUFDIsSet( Read[i].ProviderSocket,  &amp;ReadFds))  { FD_SET(Read[i].LayeredSocket, readfds); HandleCount--; } } } // Do the same for writefds // Do the same for exceptfds }</pre> <p></p> <p>For this to work, a mapping is maintained between the layered sockets passed into <span>select</span> and its corresponding provider socket. This is necessary because after the lower provider's <span>WSPSelect</span> is called, the LSP has to return only those layered provider sockets that were signaled.</p> <p> The first step is to go through each handle in the <span>FD_SET</span> and find its context information. The mapping of the provider socket to the layered socket is maintained in the <span>Read</span> array. We then have a second <span>FD_SET</span>, <span>ReadFds</span>, which contains the underlying provider's socket handles, which we then pass into the lower provider's <span>WSPSelect</span>
+ function. Upon return, we know how many handles were signaled with the 
+return value. Then it is a process of seeing which provider handles 
+passed were signaled. This is done by calling the helper function <span>WPUFDIsSet</span> function for each provider socket passed in. If it is set, we take the associated layered socket and set it into the <span>readfds</span> <span>FD_SET</span> passed into the function so that upon return from the LSP's <span>WSPSelect</span> the application has the correct handles signaled. This same process has to be performed for <span>writefds</span> and <span>exceptfds</span>.
+ Of course, the sample does not perform error handling, nor does it 
+handle the case when a timeout value is supplied. See the sample LSP for
+ the full implementation.</p> <p> The <span>WPUFDIsSet</span> function is another helper function passed to the LSP in the <span>WSPUPCALLTABLE</span> structure. The function is defined as</p> <p> </p><pre>int WSPAPI WPUFDIsSet( IN SOCKET s, IN fd_set FAR *fdset );</pre> <p></p> <p>This function behaves exactly as the <span>FD_ISSET</span> macro seen in Chapter 5.</p> <p> There is one major issue frequently encountered when implementing an LSP's <span>WSPSelect</span>: what to do if one of the event handles passed in an <span>FD_SET</span>
+ is unknown. If the LSP queries for the socket context of a given handle
+ and it fails, should the LSP indicate an error (such as <span>WSAENOTSOCK</span>) or simply pass that event handle to the lower provider unmodified? The unique problem with the <span>WSPSelect</span>
+ API is that it is the only Winsock function that can take multiple 
+socket handles in a single call. For all other Winsock functions, the 
+system knows exactly which provider should handle that API call because 
+there is just one socket handle passed as a parameter.</p> <p> Even though the Winsock specification explicitly states that only sockets from the same provider may be passed into <span>select</span>,
+ many applications ignore this (including Microsoft Internet Explorer) 
+and frequently pass down both TCP and UDP handles together. The base 
+Microsoft providers do not verify that all socket handles are from the 
+same provider. In addition, the Microsoft providers will correctly 
+handle sockets from multiple providers in a single <span>select</span> call. This is a problem with LSPs because an LSP may be layered over just a single entry such as TCP. In this case, the LSP's <span>WSPSelect</span> is invoked with <span>FD_SET</span>s
+ that contain their own sockets plus sockets from other providers (such 
+as a UDP socket from the Microsoft provider). When the LSP is 
+translating the socket handles and comes upon the UDP handle, the 
+context query will fail. At this point, it may return an error (<span>WSAENOTSOCK</span>)
+ or pass the socket down unmodified. If an error is returned, then for 
+the case of an LSP layered only over UDP/IPv4 (or TCP/IPv4), Internet 
+Explorer will no longer function. A workaround is to always install the 
+LSP over all providers for a given address family (such as for IPv4, 
+install over TCP/IPv4, UDP/IPv4, and RAW/IPv4). No Microsoft application
+ or service currently passes socket handles from multiple address 
+families into a single <span>select</span> call, although LSASS on 
+Windows NT 4.0 used to pass IPX and IPv4 sockets together (this has been
+ fixed in the latest service packs for Windows NT 4.0).</p> <p></p> <p> </p><p><span>WSAAsyncSelect</span></p> <p>Handling sockets that register for event notification via <span>WSAAsyncSelect</span>
+ also require some additional help. As you recall from Chapter 5, an 
+application registers for notification on certain events that will be 
+posted to the given window.  The problem here is that the <span>WPARAM</span>
+ parameter posted to the application's window contains the socket 
+handle. This is bad because the LSP will translate the handle passed 
+into its <span>WSPAsyncSelect</span> and call the lower provider's 
+function with the translated socket and the remaining parameters. As a 
+result, when an event is posted, it is posted directly to the 
+application's window handler and the <span>WPARAM</span> parameter contains the lower provider's socket and not the LSP-created socket.</p> <p>To
+ handle this case correctly, the LSP must create its own hidden window 
+on which to receive events from the lower provider. Then within the 
+LSP's window handler, the socket can be translated back to the 
+application socket and posted to the application's window handler. The 
+LSP's <span>WSPAsyncSelect</span> must save the window handle and 
+message that is associated with the application socket. This information
+ is saved in the socket context (for example, the <span>SOCK_INFO</span> structure of the sample LSP). The following code shows how this is handled:</p> <p> </p><pre>int WSPAPI WSPAsyncSelect (     SOCKET       s,     HWND         hWnd,     unsigned int wMsg,     long         lEvent,    LPINT        lpErrno) {    SOCK_INFO *SocketContext;    int ret;    SocketContext = FindAndLockSocketContext(s, lpErrno);    if (SocketContext != NULL)    {       SocketContext-&gt;hWnd = hWnd;       SocketContext-&gt;uMsg = wMsg;       // Get the handle to our hidden window       if ((hWorkerWindow = GetWorkerWindow()) != NULL)       {          SetBlockingProvider(SocketContext-&gt;Provider);          ret = SocketContext-&gt;Provider-&gt;NextProcTable.lpWSPAsyncSelect(                   SocketContext-&gt;ProviderSocket,                   hWorkerWindow,                   WM_SOCKET,                   lEvent,                   lpErrno);           SetBlockingProvider(NULL);       }    }    UnlockSocketContext(SocketContext);    return ret; }</pre> <p></p> <p>In
+ this code, the socket context is found and the window handle and 
+message is saved. Then the hidden asynchronous window that the LSP 
+created is returned via the <span>GetWorkerWindow</span> call. This routine simply creates the window and thread to handle the events (see <span>ASYNCSELECT.CPP</span>
+ for the full implementation). Then the lower provider is called with 
+the lower provider socket, except that we supply the window handle of 
+our LSP helper window instead.</p> <p> The code for our hidden window handler is simple:</p> <p> </p><pre>static LRESULT CALLBACK AsyncWndProc(     HWND hWnd,     UINT uMsg,     WPARAM wParam,     LPARAM lParam) {     SOCK_INFO *si;     if (uMsg == WM_SOCKET)     {         if (si = GetCallerSocket(NULL, wParam))         {             MainUpCallTable.lpWPUPostMessage(                 si-&gt;hWnd,                 si-&gt;uMsg,                 si-&gt;LayeredSocket,                 lParam);             return 0;         }     }     return DefWindowProc(hWnd, uMsg, wParam, lParam); }</pre> <p></p> <p>Here we look for only the socket notifications. The only challenge is to map the provider socket (indicated as <span>wParam</span>) back to the LSP-created socket, which is what the <span>GetCallerSocket</span> function does (defined in <span>SOCKINFO.CPP)</span>. As you recall, the <span>PROVIDER</span> structure contains a linked list of all the <span>SOCK_INFO</span> each provider created. The <span>GetCallerSocket</span> searches all the linked lists in search of the <span>SOCK_INFO</span>
+ that contains the given lower provider socket handle. This is necessary
+ because there is no other convenient way of mapping provider sockets 
+back to LSP sockets.</p> <p>Once that is found, the helper function <span>WPUPostMessage</span>
+ is called to post the event to the application's window with the 
+correct socket handle. Remember, the window handle and message were 
+saved earlier when the application called <span>WSAAsyncSelect</span> on the handle. This function is located in the <span>WSPUPCALLTABLE</span> and is defined as</p> <p> </p><pre>BOOL WSPAPI WPUPostMessage(     IN HWND hWnd,     IN UINT Msg,     IN WPARAM wParam,     IN LPARAM lParam     );</pre> <p></p> <p></p> <p> </p><p><span>WSAEventSelect</span></p> <p>This
+ socket model requires no work on the LSP's part. When the select events
+ are signaled, a simple event handle is used—no socket handles are 
+returned, so no extra socket translation is needed. For example, the 
+application calls <span>WSAEventSelect</span> with a socket, event, and event mask. Within the LSP's <span>WSPEventSelect</span>,
+ the handle is translated and passed to the lower provider with the same
+ event and event mask. When a requested event occurs on the socket, the 
+lower provider sets the application's event to be signaled, after which 
+the application calls a send or receive function as described previously
+ in the section “Blocking and Non-blocking.”</p> <p>Unless the LSP is 
+required to intercept these event notifications (as determined by the 
+LSP's actual purpose), there is no need to substitute our own event 
+handle to wait for notification from the lower layer. If you did, once 
+your substituted event was signaled, the LSP would perform the necessary
+ computation and then signal the application's event (which must be 
+saved in the socket context) with <span>WSASetEvent</span>.</p> <p></p> <p> </p><p>Overlapped I/O</p> <p>Handling
+ overlapped I/O is another complicated issue that depends on what 
+platforms the LSP is to be installed on. The easiest and most elegant 
+method is to handle all application-initiated overlapped I/O by using a 
+I/O completion port regardless of whether the application is using 
+events, callbacks, or completion ports. However, if the LSP is to be run
+ on Windows 95, Windows 98, or Windows Me, this is impossible. The 
+sample LSP provider handles both cases.</p> <p>In the case of Windows NT
+ and I/O completion ports, the LSP creates a completion port and a 
+worker thread that services the completion notifications by calling <span>GetQueuedCompletionStatus</span>.
+ When an application makes an overlapped I/O call, the LSP first checks 
+to see if the lower provider handle has been associated with the LSP's 
+completion port yet. This information is contained in the socket context
+ information as the <span>hIocp</span> field. If the lower provider 
+socket has been associated, this field is non-NULL; otherwise, it 
+contains the handle of the LSP's completion port.</p> <p>Once the 
+provider socket is associated with the LSP's completion port, the I/O is
+ posted on the lower provider's socket handle. Once it has completed, 
+the LSP worker thread will receive the notification and the LSP can 
+complete the application's request. After the LSP receives completion 
+notification, the application's overlapped I/O is completed so that the 
+application will receive notification either via event, asynchronous 
+procedure call, or its own completion port.</p> <p>Each Winsock SPI 
+function that can be made in an overlapped fashion (including Microsoft 
+extension functions) requires special handling. First, the LSP must keep
+ track of the <span>WSAOVERLAPPED</span> structure the application 
+passed into the function. It maintains useful information such as 
+indicating I/O in progress, error codes, and bytes transferred. To 
+perform this function, the LSP defines its own <span>WSAOVERLAPPED</span>
+ structure to maintain information about each overlapped I/O operation 
+posted to the lower provider's socket. This structure is defined as</p> <p> </p><pre>typedef struct _WSAOVERLAPPEDPLUS {     WSAOVERLAPPED  ProviderOverlapped;  // passed to lower provider     PROVIDER      *Provider;            // lower provider info     SOCK_INFO     *SockInfo;            // socket info for this op     SOCKET         CallerSocket;        // app (LSP) socket     SOCKET         ProviderSocket;      // lower provider socket     HANDLE         Iocp;                // LSP completion port     int            Error;               // error code?     union                               // Arguments to operation     {         ACCEPTEXARGS        AcceptExArgs;         TRANSMITFILEARGS    TransmitFileArgs;         CONNECTEXARGS       ConnectExArgs;         TRANSMITPACKETSARGS TransmitPacketsArgs;         DISCONNECTEXARGS    DisconnectExArgs;         WSARECVMSGARGS      WSARecvMsgArgs;         RECVARGS            RecvArgs;         RECVFROMARGS        RecvFromArgs;         SENDARGS            SendArgs;         SENDTOARGS          SendToArgs;         IOCTLARGS           IoctlArgs;     }; #define LSP_OP_IOCTL               1     // WSPIoctl #define LSP_OP_RECV                2     // WSPRecv #define LSP_OP_RECVFROM            3     // WSPRecvFrom #define LSP_OP_SEND                4     // WSPSend #define LSP_OP_SENDTO              5     // WSPSendTo #define LSP_OP_TRANSMITFILE        6     // TransmitFile #define LSP_OP_ACCEPTEX            7     // AcceptEx #define LSP_OP_CONNECTEX           8     // ConnectEx #define LSP_OP_DISCONNECTEX        9     // DisconnectEx #define LSP_OP_TRANSMITPACKETS    10     // TransmitPackets #define LSP_OP_WSARECVMSG         11     // WSARecvMsg     int             Operation;           // Type of operation this is     LPWSATHREADID   lpCallerThreadId;    // Caller thread     LPWSAOVERLAPPED lpCallerOverlapped;  // App's WSAOVERLAPPED struct     LPWSAOVERLAPPED_COMPLETION_ROUTINE   lpCallerCompletionRoutine;     _WSAOVERLAPPEDPLUS                *next; } WSAOVERLAPPEDPLUS, * LPWSAOVERLAPPEDPLUS;</pre> <p></p> <p>As
+ you can see, there is a lot of information maintained for each 
+overlapped operation that the application initiates. We won't go into 
+detail about all of these fields because many of them are self 
+explanatory. Instead, let's walk through what needs to occur when 
+handling an overlapped call. The steps are:</p> <ol> <li> <p> Allocate an LSP-overlapped context structure (for example, the <span>WSA-OVERLAPPEDPLUS</span> object shown in the last listing).</p> </li> <li> <p> Save the caller's <span>WSAOVERLAPPED</span> pointer in the <span>lpCallerOverlapped</span> structure.</p> </li> <li> <p> If a completion routine is supplied, save it as <span>lpCallerCompletionRoutine</span>.</p> </li> <li> <p> Mark the caller's <span>WSAOVERLAPPED</span> structure as pending by setting the <span>Internal</span> field to <span>WSS_OPERATION_IN_PROGRESS</span> (defined in WS2SPI.H).</p> </li> <li> <p> Make sure the lower provider's socket is associated with the LSP's completion port.</p> </li> <li> <p> Call the same SPI function in the lower provider with the lower provider's socket and the <span>ProviderOverlapped</span> field of the <span>WSAOVERLAPPEDPLUS</span> structure for this operation.</p> </li> <li> <p> Return <span>SOCKET_ERROR</span> and set the error code to <span>WSA_IO_PENDING</span>.</p> </li> </ol> <p>This
+ lists the minimum steps required. The sample LSP does a few extra 
+steps. First, it saves the caller's parameters, such as buffer pointers 
+and flags. These are saved in the unnamed union within the <span>WSAOVERLAPPEDPLUS</span>
+ structure. The union contains a structure for each overlapped enabled 
+Winsock function—each containing fields corresponding to their 
+respective Winsock functions' parameter lists. The sample LSP doesn't 
+use the saved parameters but it may be necessary to do so for an LSP 
+that performs a specific task. One important item to note is that some 
+of the pointer parameters supplied can be stack-based and therefore the 
+LSP <span>cannot</span> just capture the pointer values. For example, <span>WSASend</span>, <span>WSASendTo</span>, <span>WSARecv</span>, and <span>WSARecvFrom</span> take an array of <span>WSABUF</span>
+ structures that contain the send or receive buffers. This array can be 
+stack-based, which means as soon as the application calls the Winsock 
+function it may return from the calling function or free that memory (if
+ dynamically allocated). The LSP must copy the buffer pointers into its 
+own allocated <span>WSABUF</span> structures.</p> <p>Once the overlapped
+ I/O has been posted to the lower provider, it's simply a matter of 
+waiting for the LSP's completion thread to receive notification for that
+ operation. When the completion thread receives notification, the 
+pointer to the <span>WSAOVERLAPPED</span> structure for the operation returned from <span>GetQueuedCompletionStatus</span> is actually our <span>WSAOVERLAPPEDPLUS</span> structure. The following three steps need to be performed to finish this operation.</p> <ol> <li> <p> Call the lower provider's <span>WSPGetOverlappedResult</span> to get bytes transferred, flags, and the appropriate error code in case of a failure.</p> </li> <li> <p> Update the caller's <span>WSAOVERLAPPED</span> structure with <span>Offset</span> equal to the error (if any), <span>OffsetHigh</span> to the flags returned (if any), and <span>InternalHigh</span> to the bytes transferred.</p> </li> <li> <p> Complete the application's overlapped request using either <span>WPUQueueApc</span> or <span>WPUCompleteOverlappedRequest</span> depending on whether a completion function was supplied.</p> </li> </ol> <p>The
+ last step is what notifies the application that its I/O operation has 
+completed. If a completion routine was supplied, the LSP needs to 
+execute that function. This is performed by the <span>WPUQueueApc</span> function, which is a field of the <span>WSPUCALLTABLE</span> structure and is defined as</p> <p> </p><pre>int WSPAPI WPUQueueApc(     IN LPWSATHREADID lpThreadId,     IN LPWSAUSERAPC lpfnUserApc,     IN DWORD_PTR dwContext,     OUT LPINT lpErrno     );</pre> <p></p> <p>The
+ first parameter is the thread ID of the application's thread that 
+initiated this I/O because the completion routine must fire within the 
+context of that thread. If you recall, this is one of the parameters 
+saved in the <span>WSAOVERLAPPEDPLUS</span> structure when the application initiated the I/O. The second parameter is the application's completion function to call. The <span>dwContext</span> is the caller's original <span>WSAOVERLAPPED</span> structure, and <span>lpErrno</span> returns an error if <span>WPUQueueApc</span> fails.</p> <p> If the application did not specify a completion routine and supplied only a <span>WSAOVERLAPPED</span> structure, the LSP completes the I/O with <span>WPUComplete-OverlappedRequest</span>. It's curious to note that this function is not a member of the <span>WSPUPCALLTABLE</span>. Instead it is contained in WS2_32.DLL and is called normally. This function is defined as</p> <p> </p><pre>int WSPAPI WPUCompleteOverlappedRequest (     SOCKET s,     LPWSAOVERLAPPED lpOverlapped,     DWORD dwError,     DWORD cbTransferred,     LPINT lpErrno );</pre> <p></p> <p>The parameter list is easy. The <span>SOCKET</span> parameter is the application's socket and <span>lpOverlapped</span> is its <span>WSAOVERLAPPED</span> structure. <span>dwError</span> is the error if the call failed (otherwise, it should be <span>NO_ERROR</span>). <span>cbTransferred</span> is the number of bytes transferred in the operation. The <span>lpErrno</span> parameter returns the error code if the <span>WPUCompleteOverlappedRequest</span> call fails.</p> <p> You will notice that an overlapped operation that the LSP handles automatically fails with <span>WSA_IO_PENDING</span>
+ even though it is possible that when the LSP makes the call to the 
+lower provider, that overlapped operation could succeed immediately. The
+ LSP does not do this because regardless of whether the operation 
+succeeds immediately, notification will <span>always</span> be posted to
+ the completion queue. The code is a bit cleaner by always processing 
+completion notifications in the worker thread in addition to being 
+perfectly legal according to the Winsock specification. Care must be 
+taken to ensure that the calling application receives only one 
+notification per I/O operation. The sample LSP provided always returns 
+pending and waits for the completion thread to receive the notification 
+before completing the request.</p> <p> Handling overlapped I/O on 
+Windows 95, Windows 98, and Windows Me is a bit more challenging. There 
+are two possible approaches. First, the LSP can issue the overlapped I/O
+ to the lower layer and use events for completion notification. The 
+drawback to this, as we saw in Chapter 5, is a single thread can only 
+wait on <span>MAXIMUM_WAIT_OBJECTS</span> event handles (which is currently 64). The other method is to use completion functions, which is easier to implement.</p> <p> When the calling application issues an overlapped request, the LSP builds a <span>WSAOVERLAPPEDPLUS</span>
+ structure as we described earlier and then this object is placed in a 
+queue. For this model, we still use a worker thread whose purpose is to 
+wait for overlapped requests to be placed in the queue. Once the worker 
+thread is notified of available work items, it removes an item from the 
+queue and actually makes the requested overlapped operation (by calling 
+the lower provider). It is important that these overlapped operations 
+are executed in the context of the LSP thread and not an application 
+thread. The calling thread must be in an alertable wait state for the 
+completion functions to execute. Because the calling application should 
+not have to be aware if the Winsock provider is layered, it most likely 
+will not go into an alertable wait unless the application is using 
+completion functions (which it may). As a result, the LSP's worker 
+thread executes the overlapped requested and when not servicing work 
+items, it remains in an alertable wait state.</p> <p> Note that when the
+ LSP issues the overlapped I/O with a completion function, the 
+completion function supplied is the LSP's, not the application's. Once 
+the LSP's completion function fires, the LSP will post the completion to
+ the application via whatever notification mechanism the application 
+supplied (such as signaling the event or firing the completion 
+function).</p> <p></p> <p></p> <p> </p><p>Winsock Extension Functions</p> <p>For
+ LSPs that create their own sockets, they must also handle the 
+Winsock-specific extension functions that take socket handles as 
+parameters. This includes <span>AcceptEx</span>, <span>TransmitFile</span>, <span>ConnectEx</span>, <span>DisconnectEx</span>, <span>TransmitPackets</span>, and <span>WSARecvMsg</span>. This is done within the LSP's <span>WSPIoctl</span> function. When an application loads a Microsoft-specific function, it will call <span>WSAIoctl</span> with the ioctl code <span>SIO_GET_EXTENSION_FUNCTION_POINTER</span>. The LSP simply has to determine which function is being loaded via the <span>InBuffer</span>
+ parameter, which contains the GUID for the requested function. Once 
+that is done, the LSP returns the address of its own extension function.
+ This extension function will then translate all the socket handles and 
+load the extension function of the lower layer, which will be invoked by
+ the LSP. This works even if the application uses the <span>TransmitFile</span> and <span>AcceptEx</span> functions exported directly from MSWSOCK.DLL because those functions simply end up calling <span>WSAIoctl</span> with <span>SIO_GET_EXTENSION_FUNCTION_POINTER</span>.</p> <p>The sample LSP will then implement its own extension functions in <span>EXTENSION.CPP</span>.
+ The implementation of these functions is the same that it is for the 
+other SPI functions. The LSP must translate the handle, validate 
+arguments as necessary, and handle the possibility of overlapped I/O. 
+The code for <span>WSPIoctl</span> is contained in SPI.CPP and you'll notice that the first step done is check to see if the ioctl code is <span>SIO_GET_EXTENSION_FUNCTION_POINTER</span>.</p> <p></p> <p> </p><p>Miscellaneous Requirements</p> <p>This
+ section is devoted to the miscellaneous tasks that an LSP must perform 
+to behave properly. In this section, we'll cover each service provider 
+API in which an LSP must perform a special action.</p> <p> </p><p><span>WSPGetSockOpt</span></p> <p>When the calling application calls the LSP's <span>WSPGetSockOpt </span>with <span>SO_PROTOCOL_INFOA</span> or <span>SO_PROTOCOL_INFOW</span>,
+ the LSP should return its own protocol info structure and not translate
+ the handle to pass to the lower provider. If that were the case, the 
+call would return the lower provider's <span>WSAPROTOCOL_INFO</span> 
+structure instead of the LSP's. Note that both the ANSI and UNICODE 
+versions must be supported, so the LSP may have to perform the 
+appropriate string conversions on the returned structure.</p> <p></p> <p> </p><p><span>WSPSetSockOpt</span></p> <p>After an application calls <span>AcceptEx</span>, it typically calls <span>setsockopt</span> with <span>SO_UPDATE_ACCEPT_CONTEXT</span>. The argument passed to <span>WSPSetSockOpt</span>
+ is the socket handle of the accepted socket. The LSP must translate 
+that handle as well as the listening socket handle before passing the 
+call to the lower provider.</p> <p></p> <p> </p><p><span>WSPIoctl</span></p> <p>There
+ are a couple of ioctl codes that an LSP must handle differently. We've 
+already mentioned that if an LSP is implementing its own extension 
+functions (which it must if returning its own handles), it must capture 
+the <span>SIO_GET_EXTENSION_FUNCTION_POINTER</span> command. In addition, it must capture the <span>SIO_QUERY_TARGET_PNP_HANDLE</span>. The handles <span>WPUCreateSocketHandle</span> created are not true plug-and-play handles and cannot receive notifications. As a result, applications can use <span>SIO_QUERY_TARGET_PNP_ HANDLE</span> to obtain the base provider's socket handle. The LSP should  return the lower provider's socket handle in the return buffer.</p> <p></p> <p> </p><p><span>WSPJoinLeaf</span></p> <p>The <span>WSAJoinLeaf</span>
+ function is a bit odd. Depending on the protocol, the return value is 
+either a new socket handle (as in ATM) or the same handle passed in as 
+the <span>s</span>parameter (as in IP multicasting). See Chapter 9 for more information about <span>WSAJoinLeaf</span>
+ and its behavior with the various multicast enabled protocols. 
+Currently, Ipv4 and Ipv6 are the only protocols that do not create new 
+socket handles when <span>WSAJoinLeaf</span> is called. If your LSP is 
+to be layered over IP, it should take this into account. Otherwise, if 
+it did create new handles including the context information, these 
+structures would be leaked because the calling application will call <span>closesocket</span> on just one of the handles.</p> <p></p> <p> </p><p><span>WSPAddressToString</span> and <span>WSPStringToAddress</span></p> <p>These functions are unique because they do not take a socket parameter. Instead, the <span>WSAPROTOCOL_ INFOW</span>
+ structure of the LSP entry that matches the given address is passed in.
+ The LSP should find the provider layered beneath the supplied <span>WSAPROTOCOL_INFOW</span> structure and call that provider's corresponding SPI function. The only rule is if the underlying provider is <span>not</span> a base provider, the <span>WSAPROTOCOL_INFOW</span>
+ structure should be passed unmodified. Otherwise, if the underlying 
+provider is a base provider, the LSP should substitute the base 
+provider's <span>WSAPROTOCOL_INFOW</span> structure.</p> <p></p> <p></p> <p></p> <p> </p><p>Debugging an LSP</p> <p>Developing
+ an LSP is a complicated task in which one mistake will probably break 
+all applications accessing Winsock for the protocols the LSP is layered 
+over. In the event of IP, critical services such as LSASS will fail. If 
+this does happen, booting into safe mode and uninstalling the LSP will 
+return the Winsock catalog back to normal. Also, it is a good idea to 
+smoke test the LSP before rebooting the system. Internet Explorer is 
+always a good test application (when the LSP is layered over IP). 
+Otherwise, it may be necessary to write a small suite of test 
+applications to verify the LSP's functionality.</p> <p>For tracking down
+ minor problems with applications, printing debug messages to the 
+debugger can be invaluable. The sample LSP we've provided uses <span>OutputDebugString</span> in several places; it also has the ability to turn on verbose debugging by defining <span>DEBUG</span> and <span>DEBUGSPEW</span>
+ for the project. Using message boxes for debug messages is a bad idea 
+because during the boot process several system services can load the DLL
+ before the user interface subsystem is fully initialized, which will 
+cause the LSP DLL to fail during load.</p> <p>For especially difficult 
+problems, it is often necessary to use a debugger to determine the point
+ of failure. For interactive user applications, the Visual Studio 
+debugger, as well as the NT Symbolic Debugger (NTSD)—a text-mode 
+debugger available with the Platform SDK—are both excellent choices. In 
+general tracing the steps of socket creation through the various APIs 
+called on that socket will track down the problem. For NTSD, this is 
+accomplished by enabling “break on load” (for example, the NTSD command 
+is <span>sxeld</span>) for each DLL loaded until the LSP DLL is loaded. 
+At this point, breakpoints may be set for the LSP's functions of 
+interest (such as <span>WSPStartup</span>, <span>WSPSocket</span>, and <span>WSPConnect</span>).</p> <p>If
+ problems occur with system services such as LSASS during boot, 
+debugging is much more complicated. This requires a kernel mode debugger
+ to be attached to the machine running the LSP. Then it is possible to 
+attach NTSD to the failing system service and pipe the NTSD console to 
+the kernel debugger running on the second machine. For information about
+ using and setting up the various types of debuggers, consult the 
+Microsoft Developer Network (MSDN) online at http://msdn.microsoft.com.</p> <p></p> <p> </p><p>LSP Sample</p> <p>Throughout this discussion we have referred to the sample LSP on the CD in the directory <span>LSP</span>.
+ In this section, we'll briefly describe each file of the project as 
+well as how to install the LSP. The following is a list of files and 
+what they implement.</p> <ul> <li> <p><span> ASYNCSELECT.CPP&nbsp;</span>Implements helper routines used for handling <span>WSAAsyncSelect</span>.
+ This includes creating the hidden window for receiving events from the 
+lower provider as well as the window procedure that services those 
+notifications.</p> </li> <li> <p><span> EXTENSION.CPP&nbsp;</span>Implements all of the Microsoft-specific Winsock extensions available, such as <span>AcceptEx</span>, <span>TransmitFile</span>, <span>TransmitPackets</span>, <span>ConnectEx</span>, <span>DisconnectEx</span>, and <span>WSARecvMsg</span>.</p> </li> <li> <p><span> INSTLSP.CPP &nbsp;</span>Implements
+ the installation and removal code. This file is compiled into an .EXE 
+that will install and/or remove the LSP from the Winsock catalog.</p> </li> <li> <p><span> OVERLAP.CPP&nbsp;</span>Implements
+ handling overlapped I/O for the LSP. For Windows NT, this includes 
+creating the completion port as well as the worker thread for handling 
+completion notifications. For Windows 95, Windows 98, and Windows Me, 
+this includes establishing a work item queue and a worker thread that 
+services I/O placed within the queue.</p> </li> <li> <p><span> PROVIDER.CPP&nbsp;</span>Implements
+ common routines for enumerating the Winsock catalog as well as defining
+ the GUID under which the LSP is installed. These routines are used by 
+both the LSP DLL and the installation utility (INSTLSP.CPP).</p> </li> <li> <p><span> SOCKINFO.CPP&nbsp;</span>Implements
+ common routines for looking up associated socket context structures for
+ sockets that the LSP creates. This file also contains functions for 
+allocating and freeing <span>SOCK_INFO</span> structures in addition to 
+inserting and deleting them from the PROVIDER structures (which maintain
+ a list of all sockets that provider created).</p> </li> <li> <p><span> SPI.CPP&nbsp;</span>This is the “guts” of the LSP. It defines all of the WSP* functions, including <span>WSPStartup</span>.</p> </li> </ul> <p></p> <p></p><div class="ax adsense_before_1"><script async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/adsbygoogle.js"></script>
+<!-- ax_flylib_before_1 -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0797006098659510" data-ad-slot="6197526399" data-ad-format="auto"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div>
+			
+		</div>
+		<br>
+		<div class="u-cf"></div>
+
+		<div class="row"><div class="one-third column value"><a class="button button-primary mod" href="https://flylib.com/books/en/1.403.1.77/1/">Previous page</a></div><div class="one-third column value" style="text-align:center;"><a class="button button-primary mod" href="javascript:;" data-hash="86b94c22ea41b309a467c20be0fae8fd" data-path="/books/en/1.403.1/">Table of content</a></div><div class="one-third column value"><a class="button button-primary mod u-pull-right" href="https://flylib.com/books/en/1.403.1.79/1/">Next page</a></div></div>
+		<hr> <div class="row book_details">
+    <div class="two columns pdt5"><img src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6195-small.jpg" alt="Network Programming for Microsoft Windows " title="Network Programming for Microsoft Windows "></div>
+	<div class="ten columns "><div class="small_h1">Network Programming for Microsoft Windows (Microsoft Professional Series)</div></div>
+	
+    <div class="two columns smdet">ISBN: 0735605602<br>EAN: 2147483647</div>
+	 <div class="two columns smdet">Year: 2001<br>Pages: 172</div>
+	 <div class="three columns smdet">Authors: <a href="javascript:;" data-path-blank="Anthony Jones" target="_blank" class="nowrap">Anthony Jones</a></div>
+	 <div class="three columns smdet"><a class="button button-primary nowrap" href="javascript:;" data-path-blank="0735605602" target="_blank">BUY ON AMAZON</a></div>
+  </div>
+	</div>
+	 <div class="twelve columns">
+
+   </div>
+  </div>
+  <div class="ax adsense_related_1"><script async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-0797006098659510" data-ad-slot="2674403727"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+  <hr>
+  <div class="h3">Similar book on Amazon</div><div class="row"><div class="two columns amt"><div class="two columns amt "><a href="https://flylib.com/books/en/1.428.1/"><img class="u-full-width mnw" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6174-small.jpg" title="Metrics and Models in Software Quality Engineering (2nd Edition)" alt="Metrics and Models in Software Quality Engineering (2nd Edition)"><br><span>Metrics and Models in Software Quality Engineering (2nd Edition)</span></a></div></div><div class="two columns amt"><a href="javascript:;" data-path-blank="0201633728" target="_blank"><img class="u-full-width" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6195-1.jpg" title="Windows Sockets Network Programming" alt="Windows Sockets Network Programming"><br><span>Windows Sockets Network Programming</span></a></div><div class="two columns amt"><a href="javascript:;" data-path-blank="0321657748" target="_blank"><img class="u-full-width" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6195-2.jpg" title="Windows System Programming (4th Edition) (Addison-Wesley Microsoft Technology Series)" alt="Windows System Programming (4th Edition) (Addison-Wesley Microsoft Technology Series)"><br><span>Windows System Programming (4th Edition) (Addison-Wesley Microsoft Technology Series)</span></a></div><div class="two columns amt"><a href="javascript:;" data-path-blank="0123745403" target="_blank"><img class="u-full-width" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6195-3.jpg" title="TCP/IP Sockets in C Bundle: TCP/IP Sockets in C, Second Edition: Practical Guide for Programmers (Morgan Kaufmann Practical Guides)" alt="TCP/IP Sockets in C Bundle: TCP/IP Sockets in C, Second Edition: Practical Guide for Programmers (Morgan Kaufmann Practical Guides)"><br><span>TCP/IP
+ Sockets in C Bundle: TCP/IP Sockets in C, Second Edition: Practical 
+Guide for Programmers (Morgan Kaufmann Practical Guides)</span></a></div><div class="two columns amt"><a href="javascript:;" data-path-blank="1572316950" target="_blank"><img class="u-full-width" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6195-4.jpg" title="Programming Windows  with MFC, Second Edition" alt="Programming Windows  with MFC, Second Edition"><br><span>Programming Windows  with MFC, Second Edition</span></a></div><div class="two columns amt"><div class="two columns amt x2"><a href="https://flylib.com/books/en/1.372.1/"><img class="u-full-width mnw" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/6217-small.jpg" title="Introducing Microsoft Office InfoPath 2003 (Bpg-Other)" alt="Introducing Microsoft Office InfoPath 2003 (Bpg-Other)"><br><span>Introducing Microsoft Office InfoPath 2003 (Bpg-Other)</span></a></div></div></div><hr>
+  <div class="row"><div class="one-third column value">
+				<div class="bgdt bd"><a href="https://flylib.com/books/en/1.468.1/">Identifying and Managing Project Risk: Essential Tools for Failure-Proofing Your Project</a></div>
+				<ul class="subcats"><li class="mainx"><a href="https://flylib.com/books/en/1.468.1/identifying_project_resource_risk.html">Identifying Project Resource Risk</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.468.1/managing_project_constraints_and_documenting_risks.html">Managing Project Constraints and Documenting Risks</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.468.1/managing_activity_risks.html">Managing Activity Risks</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.468.1/quantifying_and_analyzing_project_risk.html">Quantifying and Analyzing Project Risk</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.468.1/closing_projects.html">Closing Projects</a></li></ul></div><div class="one-third column value">
+				<div class="bgdt bd"><a href="https://flylib.com/books/en/1.55.1/">A+ Fast Pass</a></div>
+				<ul class="subcats"><li class="mainx"><a href="https://flylib.com/books/en/1.55.1/domain_4_motherboard_processors_memory.html">Domain 4 Motherboard/Processors/Memory</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.55.1/domain_5_printers.html">Domain 5 Printers</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.55.1/domain_2_installation_configuration_and_upgrading.html">Domain 2 Installation, Configuration, and Upgrading</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.55.1/domain_3_diagnosing_and_troubleshooting.html">Domain 3 Diagnosing and Troubleshooting</a></li><li class="mainx"><a href="https://flylib.com/books/en/1.55.1/domain_4_networks.html">Domain 4 Networks</a></li></ul></div><div class="one-third column value">
+				<div class="bgdt bd"><a href="https://flylib.com/books/en/2.141.1/">Building Web Applications with UML (2nd Edition)</a></div>
+				<ul class="subcats"><li class="mainx"><a href="https://flylib.com/books/en/2.141.1/discussion.html">Discussion</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.141.1/types_of_security_risk.html">Types of Security Risk</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.141.1/3850_discussion.html">Discussion</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.141.1/vision.html">Vision</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.141.1/software_architecture_document.html">Software Architecture Document</a></li></ul></div></div><div class="row mgt10"><div class="one-third column value">
+				<div class="bgdt bd"><a href="https://flylib.com/books/en/2.196.1/">SQL Hacks</a></div>
+				<ul class="subcats"><li class="mainx"><a href="https://flylib.com/books/en/2.196.1/hack_8_filter_rows_and_columns.html">Hack 8. Filter Rows and Columns</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.196.1/hack_10_convert_subqueries_to_joins.html">Hack 10. Convert Subqueries to JOINs</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.196.1/hack_19_convert_strings_to_dates.html">Hack 19. Convert Strings to Dates</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.196.1/hack_44_tunnel_into_mysql_from_microsoft_access.html">Hack 44. Tunnel into MySQL from Microsoft Access</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.196.1/hack_96_create_an_audit_trail.html">Hack 96. Create an Audit Trail</a></li></ul></div><div class="one-third column value">
+				<div class="bgdt bd"><a href="https://flylib.com/books/en/2.519.1/">802.11 Wireless Networks: The Definitive Guide, Second Edition</a></div>
+				<ul class="subcats"><li class="mainx"><a href="https://flylib.com/books/en/2.519.1/robust_security_network_rsn_operations.html">Robust Security Network (RSN) Operations</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.519.1/11_on_the_macintosh.html">11 on the Macintosh</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.519.1/atheros_based_cards_and_madwifi.html">Atheros-Based cards and MADwifi</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.519.1/using_antennas_to_tailor_coverage.html">Using Antennas to Tailor Coverage</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.519.1/11_network_analysis_checklist.html">11 Network Analysis Checklist</a></li></ul></div><div class="one-third column value">
+				<div class="bgdt bd"><a href="https://flylib.com/books/en/2.566.1/">Telecommunications Essentials, Second Edition: The Complete Global Source (2nd Edition)</a></div>
+				<ul class="subcats"><li class="mainx"><a href="https://flylib.com/books/en/2.566.1/local_area_networking.html">Local Area Networking</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.566.1/cable_tv_networks.html">Cable TV Networks</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.566.1/hans.html">HANs</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.566.1/wireless_communications_regulations_issues.html">Wireless Communications Regulations Issues</a></li><li class="mainx"><a href="https://flylib.com/books/en/2.566.1/5g_enhanced_data_services.html">5G: Enhanced Data Services</a></li></ul></div></div><div class="row mgt10"></div>
+</div>
+<div class="section categories">
+
+	 <div class="row bgn">
+	 <div class="container small_text">
+      <div class="one-half column">
+	 	flylib.com © 2008-2017. <br>If you may any questions please contact us: flylib@qtcs.net
+		</div> <div class="one-half column">
+		<a href="javascript:;" class="u-pull-right" data-path="/privacy.html">Privacy policy</a> 
+		</div>    </div>    </div>    
+  
+  </div>
+<script src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/jquery.js"></script>
+<script defer="defer" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/jquery_002.js"></script>
+<script defer="defer" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/my.js"></script>
+<link rel="stylesheet" href="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/normalize.css">
+<link rel="stylesheet" href="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/styles.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="Layered%20Service%20Provider%20Network%20Programming%20for%20Microsoft%20Windows%20(Microsoft%20Professional%20Series)_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-109516783-1');
+</script>
+
+<div class="cookie_notify" style="">This website uses cookies. Click <a class="cnl" href="https://flylib.com/privacy.html" target="_blank">here</a> to find out more. <br>
+<a href="javascript:;" class="btn btn-xs btn-success cookies_button">Accept cookies</a>
+</div>
+<!--eduwaka-->
+  <!--waka1-->
+
+  
+
+
+<table style="width: 82px; display: none; top: 45px; left: 364px; position: absolute;" class="gstl_50 gssb_c" cellspacing="0" cellpadding="0"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
